@@ -129,6 +129,8 @@
     }
 
     &__likes {
+        position: absolute;
+        bottom: 15px;
         span {
             font-size: 12px;
             line-height: 16px;

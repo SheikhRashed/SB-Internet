@@ -629,6 +629,11 @@ header .navbar .form-inline .login__name {
   bottom: 8px;
 }
 
+.feed__likes {
+  position: absolute;
+  bottom: 15px;
+}
+
 .feed__likes span {
   font-size: 12px;
   line-height: 16px;
