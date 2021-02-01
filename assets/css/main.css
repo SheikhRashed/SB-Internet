@@ -228,11 +228,13 @@ header .navbar .form-inline .login__name {
 }
 
 .quickView .pagination li {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .quickView .pagination li a {
   border: 0px;
+  font-size: 12px;
+  line-height: 19px;
 }
 
 .quickView .pagination li a:hover {

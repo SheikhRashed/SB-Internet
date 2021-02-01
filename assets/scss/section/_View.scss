@@ -55,9 +55,11 @@
 
     .pagination {
         li {
-            margin-right: 15px;
+            margin-right: 10px;
             a {
                 border: 0px;
+                font-size: 12px;
+                line-height: 19px;
                 &:hover {
                     background-color: transparent;
                 }
