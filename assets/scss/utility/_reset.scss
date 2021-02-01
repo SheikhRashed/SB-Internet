@@ -108,6 +108,9 @@ main {
             }
         }
     }
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 .sticky__img-wrapper {

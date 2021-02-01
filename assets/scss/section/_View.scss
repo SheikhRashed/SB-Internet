@@ -1,7 +1,12 @@
 .quickView {
     .card-box {
         // height: auto !important;
-
+        position: relative;
+        .rAbs {
+            position: absolute;
+            right: 15px;
+            bottom: 25px;
+        }
         a {
             p {
                 font-size: 12px;

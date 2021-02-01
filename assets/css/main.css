@@ -101,6 +101,12 @@ main {
   color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .sticky__sidebar {
+    display: none;
+  }
+}
+
 .sticky__img-wrapper {
   width: 40px;
   height: 40px;
@@ -208,6 +214,16 @@ header .navbar .form-inline .login__name {
   header .navbar-collapse .form-inline input {
     width: 100%;
   }
+}
+
+.quickView .card-box {
+  position: relative;
+}
+
+.quickView .card-box .rAbs {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
 }
 
 .quickView .card-box a p {
@@ -436,13 +452,13 @@ header .navbar .form-inline .login__name {
 
 @media (min-width: 1200px) {
   .tabs .pt-85 {
-    padding-top: 85px;
+    padding-top: 110px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .tabs .pt-40 {
-    padding-top: 40px;
+    padding-top: 100px;
   }
 }
 
