@@ -60,8 +60,233 @@ abbr[title] {
   text-shadow: none;
 }
 
+.slick-slide {
+  outline: none;
+}
+
 body {
   font-family: BRegular;
+}
+
+.card-box {
+  padding: 25px;
+}
+
+.feed {
+  margin: 80px 0px;
+}
+
+.feed .card-box {
+  height: 450px;
+  max-height: 100%;
+}
+
+.feed__message {
+  position: relative;
+}
+
+.feed__message .feed__top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.feed__message .feed__top-bar .feed__social-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f3f4;
+}
+
+.feed__top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.feed__top-bar-title {
+  font-size: 14px;
+  line-height: 19px;
+  color: #0a2240;
+  margin-left: 15px;
+}
+
+.feed__social-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f3f4;
+}
+
+.feed__input-wrapper {
+  position: relative;
+  margin: 15px 0px;
+  margin-top: 0px;
+}
+
+.feed__input-wrapper input {
+  width: 100%;
+  height: 35px;
+  position: relative;
+  border: 1px solid #f2f3f4;
+  padding: 0px 15px;
+}
+
+.feed__input-wrapper input[placeholder] {
+  font-size: 12px;
+  line-height: 16px;
+  color: #858d9d;
+}
+
+.feed__input-wrapper span {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.feed__chat-list-top {
+  align-items: center;
+}
+
+.feed__message-content p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #3c4b6c;
+  margin-top: 15px;
+}
+
+.feed__chat-list_names {
+  margin-left: 15px;
+}
+
+.feed__chat-list_names h5 {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0px;
+  color: #3b4c6b;
+}
+
+.feed__chat-list_names span {
+  font-size: 10px;
+  line-height: 14px;
+  color: #858d9d;
+}
+
+.feed__reply {
+  position: relative;
+  padding-top: 25px;
+}
+
+.feed__reply a {
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  width: 100%;
+  text-transform: capitalize;
+  color: #0089ff;
+}
+
+.feed__reply input {
+  background-color: #f2f3f4;
+  width: 100%;
+  height: 35px;
+  padding-left: 45px;
+}
+
+.feed__reply input[placeholder] {
+  font-size: 12px;
+  line-height: 16px;
+  color: #0a2240;
+}
+
+.feed__reply span {
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+}
+
+.feed__likes span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3b4c6b;
+  margin-top: 10px;
+}
+
+.feed__brief p {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 15px 0px;
+}
+
+.feed .slick-arrow {
+  position: absolute;
+  top: -45px;
+  z-index: 1;
+  transform: translate(-50%);
+  background-color: transparent;
+}
+
+.feed .slick-arrow.prevArrow {
+  left: 50px;
+}
+
+.feed .slick-arrow.nextArrow {
+  z-index: 1;
+  right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .feed .card-box {
+    height: inherit;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .feed .slick-arrow {
+    top: -45px;
+  }
+  .feed .slick-arrow.nextArrow {
+    right: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .feed .card-box {
+    margin-bottom: 30px;
+  }
+  .feed__img-content img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 575px) {
+  .feed {
+    margin: 35px 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .feed .slick-arrow {
+    top: -45px;
+  }
+  .feed .slick-arrow.nextArrow {
+    right: 25px;
+  }
+  .feed__input-wrapper span {
+    right: 8px;
+  }
 }
 
 .footer {
