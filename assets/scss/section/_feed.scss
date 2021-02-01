@@ -1,9 +1,10 @@
 .feed {
-    margin: 80px 0px;
+    padding: 40px 0px;
 
     .card-box {
         height: 450px;
         max-height: 100%;
+        background-color: #fff;
     }
 
     &__message {

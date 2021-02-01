@@ -8,3 +8,11 @@ $('.feed__slider').slick({
     nextArrow:
         '<button class="nextArrow"> <i class="fas fa-chevron-right"></i></button>',
 });
+$('.tabs__slider').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+});
