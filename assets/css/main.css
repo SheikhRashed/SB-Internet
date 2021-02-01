@@ -68,6 +68,15 @@ body {
   font-family: BRegular;
 }
 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 main {
   background-color: #f2f3f4;
   position: relative;
@@ -228,9 +237,27 @@ header .navbar .form-inline .login__name {
   }
 }
 
+.notes {
+  padding-bottom: 0px !important;
+}
+
+.notes__items {
+  position: relative;
+}
+
+.notes__items::-webkit-scrollbar-track {
+  background-color: red;
+}
+
+.notes__item {
+  margin-right: 15px;
+}
+
 .notes__title {
   font-size: 16px;
   line-height: 21px;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 .notes__day h5 {
@@ -265,12 +292,33 @@ header .navbar .form-inline .login__name {
   line-height: 19px;
 }
 
+.notes__card {
+  width: 250px;
+  height: 250px;
+  overflow-y: hidden;
+}
+
 .notes__card .rAbs {
-  position: absolute;
-  bottom: 15px;
-  left: 20px;
   font-size: 12px;
   line-height: 16px;
+}
+
+.link__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.link__wrapper a {
+  margin-bottom: 5px;
+}
+
+main::-webkit-scrollbar {
+  width: 25px;
+  height: 5px;
+}
+
+main::-webkit-scrollbar-track {
+  border: 2px solid #f4f2f2;
 }
 
 .quickView .card-box {
@@ -544,6 +592,7 @@ header .navbar .form-inline .login__name {
 
 .feed {
   padding: 40px 0px;
+  padding-top: 20px;
 }
 
 .feed .card-box {
