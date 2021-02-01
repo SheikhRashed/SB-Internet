@@ -4,12 +4,6 @@ header {
     box-shadow: 0px 4px 30px #00000033;
     padding: 30px 0px;
 
-    // &.fixed-header {
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    // }
     .navbar {
         &-collapse {
             flex-direction: column;
@@ -82,26 +76,6 @@ header {
         }
     }
 }
-
-// // Responsive
-// @media (max-width: 1200px) {
-// }
-// @media (min-width: 1024px) and (max-width: 1199px) {
-// }
-
-// @media (min-width: 992px) and (max-width: 1023px) {
-// }
-// @media (min-width: 768px) and (max-width: 991px) {
-// }
-
-// @media (min-width: 576px) and (max-width: 767px) {
-// }
-// @media (max-width: 575px) {
-// }
-// @media (min-width: 420px) and (max-width: 575px) {
-// }
-// @media (min-width: 320px) and (max-width: 419px) {
-// }
 
 // Responsive
 @media (max-width: 1200px) {
