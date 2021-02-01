@@ -1,0 +1,12 @@
+@font-face {
+    src: url('../Fonts/BRegular.otf');
+    font-family: BRegular;
+}
+
+//  Colors variable goes here
+$colors: (
+    darkBlue: #0a2240,
+);
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name);
+}

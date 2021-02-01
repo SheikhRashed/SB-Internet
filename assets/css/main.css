@@ -1,0 +1,167 @@
+@font-face {
+  src: url("../Fonts/BRegular.otf");
+  font-family: BRegular;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+button, button:hover,
+.btn:hover,
+input:hover, button:active,
+.btn:active,
+input:active, button:focus,
+.btn:focus,
+input:focus,
+.btn,
+input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+body {
+  font-family: BRegular;
+}
+
+.footer {
+  padding: 60px 0px;
+  padding-bottom: 40px;
+  background: #0a2240;
+  color: #fff;
+}
+
+.footer__title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer__col-item {
+  margin-left: 10px;
+}
+
+.footer__col-item li {
+  margin-bottom: 15px;
+}
+
+.footer__col-item li a {
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.footer .footer__input-wrapper {
+  position: relative;
+}
+
+.footer .footer__input-wrapper label {
+  font-size: 12px;
+}
+
+.footer__col-input {
+  width: 260px;
+  height: 40px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer__search {
+  position: absolute;
+  right: -15px;
+  top: 31px;
+  width: 40px;
+  height: 40px;
+  background: #0089ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__search i {
+  font-size: 24px;
+}
+
+.footer__social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+@media (max-width: 1199px) {
+  .footer__col-input {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__col-input {
+    width: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__col {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer__input-wrapper label {
+    display: block;
+  }
+  .footer__col-input {
+    width: 100%;
+  }
+  .footer__search {
+    top: 26px;
+    right: 0px;
+  }
+  .footer__social-icon {
+    justify-content: flex-start;
+  }
+  .footer__social-icon li {
+    margin-right: 15px;
+  }
+}
