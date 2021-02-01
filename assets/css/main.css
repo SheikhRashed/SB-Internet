@@ -68,6 +68,28 @@ body {
   font-family: BRegular;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #858d9d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0033a1;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0033a1;
+}
+
 main {
   background-color: #f2f3f4;
   position: relative;
@@ -147,10 +169,6 @@ main {
   justify-content: center;
   border-radius: 50%;
   background-color: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: red;
 }
 
 .card-box {
