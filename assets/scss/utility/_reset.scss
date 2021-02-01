@@ -86,7 +86,13 @@ main {
 .sticky__sidebar {
     position: fixed;
     top: 250px;
+    left: -150px;
     z-index: 9999;
+    transition: all 0.3s linear;
+
+    &.open {
+        left: 0px;
+    }
     li {
         background-color: #0a2240;
         align-items: center;
@@ -102,15 +108,34 @@ main {
         a {
             span {
                 font-size: 12px;
-                line-height: 40px;
+                line-height: 19px;
                 margin-left: 15px;
                 color: #fff;
             }
         }
     }
-    @media (max-width: 1024px) {
-        display: none;
+    .toggle {
+        width: 25px;
+        height: 25px;
+        background-color: #0033a1;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: -25px;
+        transform: translate(0%, -50%);
+        cursor: pointer;
     }
+
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 30px;
+    //     height: 30px;
+    //     background-color: red;
+    //     right: -25px;
+    //     top: 50%;
+    //     transform: translate(0%, -50%);
+    // }
 }
 
 .sticky__img-wrapper {

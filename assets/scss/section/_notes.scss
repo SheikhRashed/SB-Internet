@@ -1,0 +1,46 @@
+.notes {
+    &__title {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    &__day {
+        h5 {
+            margin-bottom: 0px;
+            text-transform: capitalize;
+        }
+        h5,
+        span {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        span {
+            color: rgb(167, 167, 167);
+        }
+    }
+    &__img-wrapper {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #dddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        padding: 30px;
+        padding-bottom: 60px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__card {
+        .rAbs {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

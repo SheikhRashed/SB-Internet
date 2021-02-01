@@ -76,7 +76,13 @@ main {
 .sticky__sidebar {
   position: fixed;
   top: 250px;
+  left: -150px;
   z-index: 9999;
+  transition: all 0.3s linear;
+}
+
+.sticky__sidebar.open {
+  left: 0px;
 }
 
 .sticky__sidebar li {
@@ -96,15 +102,21 @@ main {
 
 .sticky__sidebar li a span {
   font-size: 12px;
-  line-height: 40px;
+  line-height: 19px;
   margin-left: 15px;
   color: #fff;
 }
 
-@media (max-width: 1024px) {
-  .sticky__sidebar {
-    display: none;
-  }
+.sticky__sidebar .toggle {
+  width: 25px;
+  height: 25px;
+  background-color: #0033a1;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translate(0%, -50%);
+  cursor: pointer;
 }
 
 .sticky__img-wrapper {
@@ -214,6 +226,51 @@ header .navbar .form-inline .login__name {
   header .navbar-collapse .form-inline input {
     width: 100%;
   }
+}
+
+.notes__title {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.notes__day h5 {
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.notes__day h5,
+.notes__day span {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.notes__day span {
+  color: #a7a7a7;
+}
+
+.notes__img-wrapper {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #dddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notes__content {
+  padding: 30px;
+  padding-bottom: 60px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.notes__card .rAbs {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .quickView .card-box {
