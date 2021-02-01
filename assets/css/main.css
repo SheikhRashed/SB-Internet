@@ -801,8 +801,7 @@ main::-webkit-scrollbar-track {
 
 @media (max-width: 1200px) {
   .feed .card-box {
-    height: inherit;
-    max-height: 100%;
+    height: 100%;
   }
 }
 
