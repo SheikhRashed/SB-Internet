@@ -85,9 +85,15 @@ main {
 .sticky__sidebar {
   position: fixed;
   top: 250px;
-  left: -150px;
+  left: 0px;
   z-index: 9999;
   transition: all 0.3s linear;
+}
+
+@media (max-width: 1300px) {
+  .sticky__sidebar {
+    left: -150px;
+  }
 }
 
 .sticky__sidebar.open {
@@ -120,12 +126,25 @@ main {
   width: 25px;
   height: 25px;
   background-color: #0033a1;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
-  right: -25px;
+  right: -40px;
   transform: translate(0%, -50%);
   cursor: pointer;
+}
+
+@media (min-width: 1301px) {
+  .sticky__sidebar .toggle {
+    display: none;
+  }
+}
+
+.sticky__sidebar .toggle i {
+  color: #fff;
+  font-size: 18px;
 }
 
 .sticky__img-wrapper {
