@@ -276,6 +276,7 @@ header .navbar .form-inline .login__name {
 
 .notes__items {
   position: relative;
+  padding-bottom: 10px;
 }
 
 .notes__item {
@@ -621,7 +622,6 @@ main::-webkit-scrollbar-track {
 
 .feed {
   padding: 40px 0px;
-  padding-top: 20px;
 }
 
 .feed .card-box {
