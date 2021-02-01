@@ -77,6 +77,88 @@ main {
   background-color: #fff;
 }
 
+.quickView .card-box a p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #0089ff;
+  margin-bottom: 0px;
+  padding-top: 25px;
+}
+
+.quickView__main-content {
+  margin-top: 25px;
+}
+
+.quickView__main-content ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+.quickView__main-content ul li a.cm {
+  margin-bottom: 10px;
+}
+
+.quickView__main-content ul li a img {
+  display: block;
+}
+
+.quickView__main-content ul li a span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3b4c6b;
+  margin-left: 10px;
+}
+
+.quickView__main-content .row .col-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.quickView__main-content .row .col-4 span {
+  font-size: 10px;
+  line-height: 14px;
+  color: #3b4c6b;
+}
+
+.quickView .pagination li {
+  margin-right: 15px;
+}
+
+.quickView .pagination li a {
+  border: 0px;
+}
+
+.quickView .pagination li a:hover {
+  background-color: transparent;
+}
+
+.quickView .pagination li a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.quickView__img-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f2f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .quickView .card-box {
+    height: 450px !important;
+  }
+}
+
 .tabs .nav-item {
   margin-right: 45px;
   margin-bottom: 0px;

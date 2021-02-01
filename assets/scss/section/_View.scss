@@ -1,0 +1,106 @@
+.quickView {
+    .card-box {
+        // height: auto !important;
+
+        a {
+            p {
+                font-size: 12px;
+                line-height: 16px;
+                color: #0089ff;
+                margin-bottom: 0px;
+                padding-top: 25px;
+            }
+        }
+    }
+    &__main-content {
+        margin-top: 25px;
+        ul {
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 30px;
+                    &.cm {
+                        margin-bottom: 10px;
+                    }
+                    img {
+                        display: block;
+                    }
+                    span {
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #3b4c6b;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .row {
+            .col-4 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 40px;
+                span {
+                    font-size: 10px;
+                    line-height: 14px;
+                    color: #3b4c6b;
+                }
+            }
+        }
+    }
+
+    .pagination {
+        li {
+            margin-right: 15px;
+            a {
+                border: 0px;
+                &:hover {
+                    background-color: transparent;
+                }
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    &__img-wrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #f2f3f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// Responsive
+@media (max-width: 1200px) {
+    .quickView {
+        .card-box {
+            height: 450px !important;
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (min-width: 420px) and (max-width: 575px) {
+}
+@media (min-width: 320px) and (max-width: 419px) {
+}
