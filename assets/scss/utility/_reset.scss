@@ -80,4 +80,42 @@ body {
 
 main {
     background-color: #f2f3f4;
+    position: relative;
+}
+
+.sticky__sidebar {
+    position: fixed;
+    top: 250px;
+    z-index: 9999;
+    li {
+        background-color: #0a2240;
+        align-items: center;
+        padding: 20px;
+        border-radius: 2px;
+
+        &.sticky__item-02 {
+            background-color: #0033a1;
+        }
+        &.sticky__item-03 {
+            background-color: #f45a0e;
+        }
+        a {
+            span {
+                font-size: 12px;
+                line-height: 40px;
+                margin-left: 15px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.sticky__img-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
 }

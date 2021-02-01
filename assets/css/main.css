@@ -70,6 +70,45 @@ body {
 
 main {
   background-color: #f2f3f4;
+  position: relative;
+}
+
+.sticky__sidebar {
+  position: fixed;
+  top: 250px;
+  z-index: 9999;
+}
+
+.sticky__sidebar li {
+  background-color: #0a2240;
+  align-items: center;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.sticky__sidebar li.sticky__item-02 {
+  background-color: #0033a1;
+}
+
+.sticky__sidebar li.sticky__item-03 {
+  background-color: #f45a0e;
+}
+
+.sticky__sidebar li a span {
+  font-size: 12px;
+  line-height: 40px;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.sticky__img-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 .card-box {
@@ -108,17 +147,10 @@ header .navbar-collapse .form-inline input[placeholder] {
   line-height: 20px;
 }
 
-header .navbar-collapse .form-inline input[placeholder]:focus {
-  color: #fff;
-}
-
-header .navbar-collapse .form-inline button,
+header .navbar-collapse .form-inline button.btn,
 header .navbar-collapse .form-inline .btn:hover,
-header .navbar-collapse .form-inline input:hover,
 header .navbar-collapse .form-inline .btn:active,
-header .navbar-collapse .form-inline input:active,
-header .navbar-collapse .form-inline .btn:focus,
-header .navbar-collapse .form-inline input:focus {
+header .navbar-collapse .form-inline .btn:focus {
   position: absolute;
   right: 0px;
   height: 40px;

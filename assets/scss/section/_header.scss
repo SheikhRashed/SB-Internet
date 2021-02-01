@@ -19,18 +19,14 @@ header {
                     &:hover,
                     &:focus {
                         position: relative !important;
-                        // background-color: #fff !important;
                         color: #000;
                     }
                     &[placeholder] {
                         font-size: 12px;
                         line-height: 20px;
-                        &:focus {
-                            color: #fff;
-                        }
                     }
                 }
-                button {
+                button.btn {
                     position: absolute;
                     right: 0px;
                     height: 40px;
