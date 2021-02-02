@@ -2,7 +2,14 @@
     src: url('../Fonts/BRegular.otf');
     font-family: BRegular;
 }
-
+@font-face {
+    src: url('../Fonts/Bbook.otf');
+    font-family: Bbook;
+}
+@font-face {
+    src: url('../Fonts/BMedium.otf');
+    font-family: BRegular;
+}
 //  Colors variable goes here
 $colors: (
     darkBlue: #0a2240,
