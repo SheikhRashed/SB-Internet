@@ -171,6 +171,42 @@ main {
   font-size: 18px;
 }
 
+.sticky__sidebar.social {
+  left: inherit;
+  right: 0px;
+}
+
+.sticky__sidebar.social .sticky__item-01 {
+  background-color: #f54052;
+}
+
+.sticky__sidebar.social .sticky__item-02 {
+  background-color: #ae2d68;
+}
+
+.sticky__sidebar.social .sticky__item-03 {
+  background-color: #660f56;
+}
+
+.sticky__sidebar.social .sticky__item-04 {
+  background-color: #280659;
+}
+
+@media (max-width: 1365px) {
+  .sticky__sidebar.social {
+    right: -55px;
+  }
+}
+
+.sticky__sidebar.social .toggle {
+  right: inherit;
+  left: -30px;
+}
+
+.sticky__sidebar.social.open {
+  right: 0px;
+}
+
 .sticky__img-wrapper {
   width: 40px;
   height: 40px;
@@ -1078,21 +1114,8 @@ main::-webkit-scrollbar-track {
   padding: 30px 0px;
 }
 
-.comments::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
-  width: 58%;
-  height: 2px;
-  background: #797878;
-}
-
-@media (max-width: 1200px) {
-  .comments::after {
-    width: 95%;
-  }
+.comments__content {
+  padding-top: 30px;
 }
 
 .comments .card-box {

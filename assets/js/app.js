@@ -28,7 +28,13 @@ $('.tabs__slider').slick({
 });
 
 const toggle = document.querySelector('.toggle');
+const toggle2 = document.querySelector('.toggle2');
 const sticky = document.querySelector('.sticky__sidebar');
+const sticky2 = document.querySelector('.sticky__sidebar.social');
+
 toggle.addEventListener('click', (e) => {
     sticky.classList.toggle('open');
+});
+toggle2.addEventListener('click', (e) => {
+    sticky2.classList.toggle('open');
 });

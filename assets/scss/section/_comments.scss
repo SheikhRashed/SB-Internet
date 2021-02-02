@@ -1,21 +1,23 @@
 .comments {
     position: relative;
     padding: 30px 0px;
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%);
-        width: 58%;
-        height: 2px;
-        background: rgb(121, 120, 120);
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translate(-50%);
+    //     width: 58%;
+    //     height: 2px;
+    //     background: rgb(121, 120, 120);
 
-        @media (max-width: 1200px) {
-            width: 95%;
-        }
+    //     @media (max-width: 1200px) {
+    //         width: 95%;
+    //     }
+    // }
+    &__content {
+        padding-top: 30px;
     }
-
     .card-box {
         margin-bottom: 30px;
     }

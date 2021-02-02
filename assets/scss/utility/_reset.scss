@@ -160,6 +160,35 @@ main {
             font-size: 18px;
         }
     }
+
+    &.social {
+        left: inherit;
+        right: 0px;
+
+        .sticky__item-01 {
+            background-color: #f54052;
+        }
+        .sticky__item-02 {
+            background-color: #ae2d68;
+        }
+        .sticky__item-03 {
+            background-color: #660f56;
+        }
+        .sticky__item-04 {
+            background-color: #280659;
+        }
+        @media (max-width: 1365px) {
+            right: -55px;
+        }
+        .toggle {
+            right: inherit;
+            left: -30px;
+            // display: none;
+        }
+        &.open {
+            right: 0px;
+        }
+    }
 }
 
 .sticky__img-wrapper {
