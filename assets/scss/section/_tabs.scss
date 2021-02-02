@@ -151,6 +151,16 @@
 
 @media (max-width: 767px) {
     .tabs {
+        .container {
+            .row {
+                .col-lg-4 {
+                    &.mt-5 {
+                        margin-top: 10px !important;
+                    }
+                }
+            }
+        }
+
         &__img-wrapper {
             height: 100%;
             img {

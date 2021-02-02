@@ -188,14 +188,24 @@
 
 @media (max-width: 991px) {
     .feed {
-        .card-box {
-            margin-bottom: 30px;
+        .container {
+            .row {
+                .col-lg-4 {
+                    margin-bottom: 30px;
+                }
+            }
         }
         &__img-content {
             img {
                 width: 100%;
                 object-fit: cover;
             }
+        }
+        &__likes {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            padding-top: 10px;
         }
     }
 }
@@ -208,6 +218,7 @@
 @media (max-width: 575px) {
     .feed {
         margin: 35px 0px;
+        margin-bottom: 0px;
     }
 }
 @media (min-width: 420px) and (max-width: 575px) {

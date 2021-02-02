@@ -265,6 +265,9 @@ header .navbar .form-inline .login__name {
     margin: 0;
     margin-bottom: 30px;
   }
+}
+
+@media (max-width: 1199px) {
   header .navbar-collapse .form-inline input {
     width: 100%;
   }
@@ -445,6 +448,12 @@ main::-webkit-scrollbar-track {
   }
 }
 
+@media (max-width: 767px) {
+  .quickView.feed {
+    padding-bottom: 0px;
+  }
+}
+
 .tabs .nav-item {
   margin-right: 45px;
   margin-bottom: 0px;
@@ -598,6 +607,9 @@ main::-webkit-scrollbar-track {
 }
 
 @media (max-width: 767px) {
+  .tabs .container .row .col-lg-4.mt-5 {
+    margin-top: 10px !important;
+  }
   .tabs__img-wrapper {
     height: 100%;
   }
@@ -815,18 +827,25 @@ main::-webkit-scrollbar-track {
 }
 
 @media (max-width: 991px) {
-  .feed .card-box {
+  .feed .container .row .col-lg-4 {
     margin-bottom: 30px;
   }
   .feed__img-content img {
     width: 100%;
     object-fit: cover;
   }
+  .feed__likes {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 575px) {
   .feed {
     margin: 35px 0px;
+    margin-bottom: 0px;
   }
 }
 
