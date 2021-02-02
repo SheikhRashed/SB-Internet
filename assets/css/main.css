@@ -273,6 +273,83 @@ header .navbar .form-inline .login__name {
   }
 }
 
+.breedCrumb {
+  background: #f2f3f4;
+}
+
+.breedCrumb .container {
+  max-width: 1340px;
+}
+
+.breedCrumb__flow {
+  height: 105px;
+  display: flex;
+  align-items: center;
+}
+
+.breedCrumb__flow li {
+  margin-right: 15px;
+}
+
+.breedCrumb__flow li a {
+  color: #0089ff;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.breedCrumb__flow li a.active {
+  color: #0a2240;
+}
+
+@media (max-width: 575px) {
+  .breedCrumb__flow li {
+    margin-right: 10px;
+  }
+  .breedCrumb__flow li a {
+    font-size: 14px;
+  }
+  .breedCrumb__flow li a .space {
+    display: none;
+  }
+}
+
+@media (max-width: 574px) {
+  .breedCrumb__flow li {
+    margin-right: 15px;
+  }
+  .breedCrumb__flow li a {
+    font-size: 12px;
+    line-height: 0px;
+    white-space: nowrap;
+  }
+  .breedCrumb__flow li a.active {
+    display: block;
+    margin-top: 50px;
+    margin-left: -60px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .breedCrumb__flow {
+    justify-content: center;
+  }
+  .breedCrumb__flow li {
+    margin-right: 15px;
+  }
+  .breedCrumb__flow li a {
+    font-size: 12px;
+    line-height: 0px;
+    white-space: nowrap;
+  }
+  .breedCrumb__flow li a.active {
+    display: block;
+    margin-top: 50px;
+    margin-left: -195px;
+    font-weight: bold;
+  }
+}
+
 .notes {
   padding-bottom: 0px !important;
 }
