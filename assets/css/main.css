@@ -970,6 +970,12 @@ main::-webkit-scrollbar-track {
   background: #797878;
 }
 
+@media (max-width: 1200px) {
+  .comments::after {
+    width: 95%;
+  }
+}
+
 .comments .card-box {
   margin-bottom: 30px;
 }

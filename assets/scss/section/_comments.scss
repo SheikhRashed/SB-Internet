@@ -10,6 +10,10 @@
         width: 58%;
         height: 2px;
         background: rgb(121, 120, 120);
+
+        @media (max-width: 1200px) {
+            width: 95%;
+        }
     }
 
     .card-box {
