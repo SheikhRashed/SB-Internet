@@ -1101,6 +1101,10 @@ main::-webkit-scrollbar-track {
   margin-bottom: 5px;
 }
 
+.comments__interactivity ul li span i {
+  color: #0089ff;
+}
+
 .comments__previous {
   background: #f2f3f4;
   padding: 10px;
