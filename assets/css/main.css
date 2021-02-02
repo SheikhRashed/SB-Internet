@@ -606,6 +606,12 @@ main::-webkit-scrollbar-track {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  .tabs .breedcrumb {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 767px) {
   .tabs .container .row .col-lg-4.mt-5 {
     margin-top: 10px !important;
