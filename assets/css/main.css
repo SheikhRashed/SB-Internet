@@ -3,6 +3,16 @@
   font-family: BRegular;
 }
 
+@font-face {
+  src: url("../Fonts/Bbook.otf");
+  font-family: Bbook;
+}
+
+@font-face {
+  src: url("../Fonts/BMedium.otf");
+  font-family: BMedium;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -941,6 +951,117 @@ main::-webkit-scrollbar-track {
   }
   .feed__input-wrapper span {
     right: 8px;
+  }
+}
+
+.comments {
+  position: relative;
+  padding: 30px 0px;
+}
+
+.comments::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 58%;
+  height: 2px;
+  background: #797878;
+}
+
+.comments .card-box {
+  margin-bottom: 30px;
+}
+
+.comments__number {
+  font-size: 20px;
+  line-height: 27px;
+  color: #0a2240;
+  font-family: BMedium;
+}
+
+.comments__pepole-face {
+  text-align: center;
+}
+
+.comments__pepole-face img {
+  width: 60px;
+  height: 60px;
+}
+
+.comments__holder-name, .comments__time {
+  font-size: 15px;
+  line-height: 20px;
+  color: #0a2240;
+  font-family: BMedium;
+}
+
+.comments__textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.comments__textarea textarea {
+  border: 1px solid #858d9d;
+  margin: 15px 0px;
+  margin-top: 0px;
+  height: 85px;
+}
+
+.comments__btn {
+  background: #0089ff;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comments__reply-text {
+  font-size: 15px;
+  line-height: 22px;
+  color: #0a2240;
+  margin-bottom: 0px;
+}
+
+.comments__interactivity ul li {
+  font-family: Bbook;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0a2240;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comments__interactivity ul li span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f2f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.comments__previous {
+  background: #f2f3f4;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .comments__pepole-face {
+    text-align: left;
+    margin-bottom: 15px;
   }
 }
 
