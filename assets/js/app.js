@@ -1,3 +1,84 @@
+'use strict';
+
+const toolsItem = [
+    'Adobe Cloud',
+    'AD Self Service',
+    'All Employee Guide',
+    'Access request form',
+    'Access revoke form',
+    'Axure RP Cloud',
+    'Adobe Cloud Analytics',
+    'ATM IT Incident​',
+    'AD Self Service',
+    'Access revoke form',
+    'AML IT Incident Compliance',
+    'ARIS Script IT Incident',
+    'All Employee Guide',
+    'Axure RP Cloud',
+    'Assurance IT Incident',
+    'Remedy',
+    'New Account application',
+    'Bond Calculator',
+    'Pre-Approval bond application',
+    'forms',
+    'bond calculator',
+    'forex form',
+];
+
+const alphabet = document.querySelector('#alphabet');
+toolsItem.forEach((item) => {
+    // create li element
+    const li = document.createElement('li');
+    // create link
+    const link = document.createElement('a');
+    link.textContent = item;
+    li.appendChild(link);
+    alphabet.appendChild(li);
+    // console.log(item);
+});
+
+// const alphabet = [
+//     'A',
+//     'B',
+//     'C',
+//     'D',
+//     'E',
+//     'F',
+//     'G',
+//     'H',
+//     'I',
+//     'J',
+//     'K',
+//     'L',
+//     'M',
+//     'N',
+//     'O',
+//     'P',
+//     'Q',
+//     'R',
+//     'S',
+//     'T',
+//     'U',
+//     'V',
+//     'W',
+//     'X',
+//     'Y',
+//     'Z',
+//     '#',
+// ];
+// console.log(alpha);
+// alphabet.forEach((alpha, i) => {
+//     const capital = document.querySelector('.capital__Alphabet');
+//     //    alpha.textContent = 'Hello'
+//     // creaate li
+//     const li = document.createElement('li');
+//     li.className = 'capital__letter';
+//     // capital.appendChild
+//     li.innerHTML = `${alpha}`;
+//     capital.appendChild(li);
+//     console.log(li, i);
+// });
+
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 300) {
         $('header').addClass('fixed-header');
@@ -37,4 +118,9 @@ toggle.addEventListener('click', (e) => {
 });
 toggle2.addEventListener('click', (e) => {
     sticky2.classList.toggle('open');
+});
+$('#alphabet').listnav({
+    includeAll: false,
+    includeNums: false,
+    showCounts: false,
 });
