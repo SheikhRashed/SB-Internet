@@ -135,7 +135,7 @@ main {
 }
 
 .sticky__sidebar li.sticky__item-03 {
-  background-color: #f45a0e;
+  background-color: #02aadd;
 }
 
 .sticky__sidebar li a span {
@@ -177,19 +177,19 @@ main {
 }
 
 .sticky__sidebar.social .sticky__item-01 {
-  background-color: #f54052;
+  background-color: #822270;
 }
 
 .sticky__sidebar.social .sticky__item-02 {
-  background-color: #ae2d68;
+  background-color: #b34fc5;
 }
 
 .sticky__sidebar.social .sticky__item-03 {
-  background-color: #660f56;
+  background-color: #ff6611;
 }
 
 .sticky__sidebar.social .sticky__item-04 {
-  background-color: #280659;
+  background-color: #675dc6;
 }
 
 @media (max-width: 1365px) {
