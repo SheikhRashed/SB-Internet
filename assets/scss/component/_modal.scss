@@ -1,0 +1,83 @@
+.modal__sucess {
+    // background-color: red;
+    .modal {
+        &-header {
+            padding-bottom: 0px;
+            h5 {
+                margin: 0;
+                font-size: 24px;
+                line-height: 30px;
+                color: #0a2240;
+            }
+        }
+        &-body {
+            p {
+                font-size: 14px;
+                line-height: 28px;
+            }
+            .toolbox__render-item {
+                li {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        border: 1px solid;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 15px;
+                        color: #0e8a00;
+                        border-color: #979797;
+                    }
+                    a {
+                        font-size: 14px;
+                        line-height: 40px;
+                        color: #858d98;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modalReqTool {
+    // display: none;
+    border-radius: 0;
+    .modal {
+        &-header {
+            padding-bottom: 0px;
+            h5 {
+                font-size: 24px;
+                line-height: 30px;
+                margin-left: 0;
+                font-family: BMedium;
+                color: #0a2240;
+                // text-transform: capitalize;
+            }
+        }
+        &-body {
+            .form-group {
+                label {
+                    font-size: 14px;
+                    line-height: 40px;
+                    color: #4f637c;
+                }
+                input {
+                    border-color: #cdcdcd;
+                    &:hover {
+                        border: 1px solid #cdcdcd;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 575px) {
+    .modalReqTool {
+        .modal-dialog {
+            max-width: 45%;
+        }
+    }
+}

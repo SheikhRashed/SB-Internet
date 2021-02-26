@@ -240,6 +240,81 @@ main {
   background-color: #fff;
 }
 
+.modal__sucess .modal-header {
+  padding-bottom: 0px;
+}
+
+.modal__sucess .modal-header h5 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0a2240;
+}
+
+.modal__sucess .modal-body p {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.modal__sucess .modal-body .toolbox__render-item li {
+  display: flex;
+  align-items: center;
+}
+
+.modal__sucess .modal-body .toolbox__render-item li span {
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: #0e8a00;
+  border-color: #979797;
+}
+
+.modal__sucess .modal-body .toolbox__render-item li a {
+  font-size: 14px;
+  line-height: 40px;
+  color: #858d98;
+}
+
+.modalReqTool {
+  border-radius: 0;
+}
+
+.modalReqTool .modal-header {
+  padding-bottom: 0px;
+}
+
+.modalReqTool .modal-header h5 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: 0;
+  font-family: BMedium;
+  color: #0a2240;
+}
+
+.modalReqTool .modal-body .form-group label {
+  font-size: 14px;
+  line-height: 40px;
+  color: #4f637c;
+}
+
+.modalReqTool .modal-body .form-group input {
+  border-color: #cdcdcd;
+}
+
+.modalReqTool .modal-body .form-group input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+@media (min-width: 575px) {
+  .modalReqTool .modal-dialog {
+    max-width: 45%;
+  }
+}
+
 header {
   background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 30px #00000033;

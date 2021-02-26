@@ -134,7 +134,7 @@
         <div class="card-box shadow-lg business-Tools__reco my-4">
            <div class="business-Tools__top ">
 			<span class=" business-Tools__reco-title">Recommended for you</span>
-			<span  class="business-Tools__cross"> X</span>
+			<span  class="business-Tools__cross append"> X</span>
 		
 		   </div>
 		   <div class="business-Tools__bottom px-4">
@@ -216,22 +216,142 @@
 					</li>
 					
 			</ul>
-				<button class="btn btn--primary">Add to my workbench</button>                
+				<button class="btn btn--primary" data-toggle="modal" data-target="#exampleModalCenter">Add to my workbench</button>   
+			
+				
+				<!-- Modal -->
+				<div class="modal fade modal__sucess" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header border-0">
+						<h5 class="modal-title" id="exampleModalLongTitle">Sucess</h5>
+						
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						</div>
+						<div class="modal-body">
+							<p class="d-inline">The following business tools were successfully added to your Workbench page.</p>
+
+							<ul class="toolbox__render-item">
+								<li>
+									<span>✓</span>
+									<a href="#">Remedy</a>
+								</li>
+							</div>
+						</div>
+						<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+						</div> -->
+					</div>
+					</div>
+				</div>             
 		   </div>
-        </div>
-        <div class="card-box shadow-lg business-Tools__items px-5">
-          <ul id="alphabet" class="demo">
-<!--             -->
-          </ul>
-          <ul class="text-right pt-3 business-Tools__show">
-            <li><a href="#">Show All ></a></li>
-            <li><a href="#">Recommended tools for you ></a></li>
-          </ul>
-        </div>
-		<div class="business-Tools__sugest">
-			<h5>is The tool you're looking for not in the list? </h5>
-			<button class="btn btn--primary">Suggest IT</button>
+		   <div class="card-box shadow-lg business-Tools__items px-5">
+			<ul id="alphabet" class="demo">
+  <!--             -->
+			</ul>
+			<ul class="text-right pt-3 business-Tools__show">
+			  <li><a href="#">Show All ></a></li>
+			  <li><a href="#" class="append">Recommended tools for you ></a></li>
+			</ul>
+		  </div>
+		  <div class="business-Tools__sugest">
+			  <h5>is The tool you're looking for not in the list? </h5>
+			  <!-- Button trigger modal -->
+			  <button class="btn btn--primary" data-toggle="modal" data-target="#sugesstTool">Suggest IT</button>
+
+				<!-- Modal -->
+				<div class="modal fade modalReqTool" id="sugesstTool" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header border-0">
+						<h5 class="modal-title" id="exampleModalLongTitle">Request a tool</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						</div>
+						<div class="modal-body ">
+						<p>
+							Please provide the details of the business tool required, and we will be sure to add it to the business tool page.
+						</p>
+						<form>
+							<div class="form-group">
+							  <label for="businessName">Name of the business tool</label>
+							  <input type="email" class="form-control" id="businessName" placeholder="">
+							</div>
+							<div class="form-group">
+							  <label for="urlFound">URL where the tool can be found</label>
+							  <input type="email" class="form-control" id="urlFound" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="toolPurpose">What will the tool be used for?</label>
+								<textarea class="form-control" id="toolPurpose" rows="3"></textarea>
+							  </div>
+							<div class="form-group">
+								<label for="personRole">The role of the person who will be using the tool</label>
+								<select class="form-control" id="personRole">
+									<option>Select an option</option>
+								  </select>
+							</div>
+							<div class="form-group">
+								<label for="corporateLine">The business line/corporate function where the tool will be used</label>
+								<select class="form-control" id="corporateLine">
+									<option>Select an option</option>
+								  </select>
+							</div>
+							<div class="form-group">
+								<label for="department">The department where the tool will be used</label>
+								<select class="form-control" id="department">
+									<option>Select an option</option>
+								  </select>
+							</div>
+							
+							<div class="form-group">
+								<label for="country">The country where the tool will be used</label>
+								<select class="form-control" id="country">
+									<option>Select an option</option>
+								  </select>
+							</div>
+							
+							
+						  </form>
+						</div>
+						<div class="modal-footer border-0 mr-auto">
+						<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+						<button type="button" class="btn btn--primary"  data-dismiss="modal" id="saveSucess" onclick="sweetAlert()">Save changes</button>
+						</div>
+
+  
+  <!-- Modal -->
+  <!-- <div class="modal sucess fade" id="sucess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
 		</div>
+		<div class="modal-body">
+		  ...
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div> -->
+
+					</div>
+					</div>
+				</div>
+		  </div>
+
+        </div>
+
       </div>
     </section>
     <!-- Business tools  section end   -->
@@ -318,8 +438,11 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery-listnav.js"></script>
+  <!-- <script src="assets/js/></script> -->
+  <!-- <script src="assets/js/sweetalert.min.js"></script> -->
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>

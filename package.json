@@ -1,0 +1,9 @@
+{
+    "dependencies": {},
+    "name": "SB-Internet",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/SheikhRashed/SB-Internet.git",
+    "author": "Sheikh Rashed <mdrashed1310@gmail.com>",
+    "license": "MIT"
+}

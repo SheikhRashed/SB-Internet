@@ -76,10 +76,25 @@ function insertData(data) {
 //     li.appendChild(document.createTextNode('hello'));
 //     console.log(li);
 // });
-console.log(selectItem.length);
+// console.log(selectItem.length);
 // console.log(output[1]);
 // output.add
 // output[i]
+
+const recomendDiv = document.querySelector('.business-Tools__reco');
+// const cross = document.querySelector('.business-Tools__cross');
+const appendDiv = document.querySelectorAll('.append');
+console.log(appendDiv);
+// console.log(appendDiv);
+// appendDiv.addEventListener('click', (item) => {
+//     recomendDiv.classList.toggle('d-block');
+// });
+appendDiv.forEach((item) => {
+    item.addEventListener('click', () => {
+        recomendDiv.classList.toggle('d-none');
+    });
+});
+
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 300) {
         $('header').addClass('fixed-header');
