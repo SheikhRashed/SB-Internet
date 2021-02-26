@@ -140,3 +140,20 @@ $('#alphabet').listnav({
     includeNums: false,
     showCounts: false,
 });
+
+// Business tool suggest form 
+
+// Sweetalert delete start
+$('#sendRequest').on('click', function(){
+    Swal.fire({
+        title: 'Success',
+        text: `Thank you for your Business tool suggestion. 
+        Your request will be made available upon approval.`,
+        showCloseButton: true,
+        showConfirmButton: false,
+      })
+})
+
+
+//Sweetalert delete end      
+

@@ -7,6 +7,7 @@
   <title>SB-intranet</title>
   <!-- Fontawesome -->
   <link rel="stylesheet" href="assets/css/all.min.css" />
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <!-- Slick slider -->
@@ -305,7 +306,7 @@
 					<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<div class="modal-header border-0">
-						<h5 class="modal-title" id="exampleModalLongTitle">Request a tool</h5>
+						<h5 class="modal-title" id="">Request a tool</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -314,7 +315,7 @@
 						<p>
 							Please provide the details of the business tool required, and we will be sure to add it to the business tool page.
 						</p>
-						<form>
+						<form id="bt-request-form">
 							<div class="form-group">
 							  <label for="businessName">Name of the business tool</label>
 							  <input type="email" class="form-control" id="businessName" placeholder="">
@@ -353,13 +354,14 @@
 								  </select>
 							</div>
 							
+							<div class="border-0 ml-auto">
+								<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+								<button type="submit" class="btn btn--primary"  data-dismiss="modal" id="sendRequest">Send My Request</button>
+							</div>
 							
 						  </form>
 						</div>
-						<div class="modal-footer border-0 mr-auto">
-						<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-						<button type="button" class="btn btn--primary"  data-dismiss="modal" id="saveSucess" onclick="sweetAlert()">Save changes</button>
-						</div>
+					
 
   
   <!-- Modal -->
@@ -477,7 +479,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery-listnav.js"></script>
   <!-- <script src="assets/js/></script> -->
-  <!-- <script src="assets/js/sweetalert.min.js"></script> -->
+  <script src="assets/js/sweetalert.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/app.js"></script>
 
