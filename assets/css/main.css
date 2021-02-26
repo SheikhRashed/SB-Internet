@@ -226,14 +226,26 @@ header {
   background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 30px #00000033;
   padding: 30px 0px;
+  position: relative;
 }
 
-header .navbar-collapse {
-  flex-direction: column;
+header::after {
+  content: url("../images/bg/Bitmap.png");
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+
+header::before {
+  content: url("../images/bg/btimap-2.png");
+  position: absolute;
+  top: 20px;
+  right: 0px;
 }
 
 header .navbar-collapse .form-inline {
   position: relative;
+  margin-right: -150px;
 }
 
 header .navbar-collapse .form-inline input {
@@ -265,12 +277,8 @@ header .navbar-collapse .form-inline .btn:focus {
   color: #fff;
 }
 
-header .navbar-nav {
-  margin-bottom: 30px;
-}
-
 header .navbar-nav li {
-  margin-right: 35px;
+  margin-right: 50px;
   position: relative;
 }
 
@@ -282,8 +290,10 @@ header .navbar-nav li::after {
   content: '';
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   height: 0px;
+  left: 50%;
+  transform: translate(-50%);
   background: #fff;
 }
 
@@ -314,8 +324,20 @@ header .navbar .form-inline .login__name {
 }
 
 @media (max-width: 1199px) {
+  header .navbar-collapse .form-inline {
+    margin-right: 0px;
+  }
   header .navbar-collapse .form-inline input {
     width: 100%;
+  }
+  header .navbar-nav li::after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  header::after {
+    left: 0px;
   }
 }
 

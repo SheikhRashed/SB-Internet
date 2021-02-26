@@ -27,58 +27,59 @@ const toolsItem = [
 
 const alphabet = document.querySelector('#alphabet');
 toolsItem.forEach((item) => {
+    // item.add
+    // console.log(item);
     // create li element
+
     const li = document.createElement('li');
     // create link
     const link = document.createElement('a');
     link.textContent = item;
     li.appendChild(link);
-    alphabet.appendChild(li);
     // console.log(item);
+    alphabet.appendChild(li);
+    // item.add
 });
 
-// const alphabet = [
-//     'A',
-//     'B',
-//     'C',
-//     'D',
-//     'E',
-//     'F',
-//     'G',
-//     'H',
-//     'I',
-//     'J',
-//     'K',
-//     'L',
-//     'M',
-//     'N',
-//     'O',
-//     'P',
-//     'Q',
-//     'R',
-//     'S',
-//     'T',
-//     'U',
-//     'V',
-//     'W',
-//     'X',
-//     'Y',
-//     'Z',
-//     '#',
-// ];
-// console.log(alpha);
-// alphabet.forEach((alpha, i) => {
-//     const capital = document.querySelector('.capital__Alphabet');
-//     //    alpha.textContent = 'Hello'
-//     // creaate li
-//     const li = document.createElement('li');
-//     li.className = 'capital__letter';
-//     // capital.appendChild
-//     li.innerHTML = `${alpha}`;
-//     capital.appendChild(li);
-//     console.log(li, i);
-// });
+// let output = [];
+// const selectItems = document.querySelectorAll('#alphabet li a');
+let selectItem = [];
 
+const select = document.querySelectorAll('#alphabet li a');
+select.forEach((singleItem) => {
+    singleItem.addEventListener('click', () => {
+        selectItem.push(singleItem);
+        // console.log(selectItem);
+        insertData(selectItem);
+    });
+});
+function insertData(data) {
+    // data.forEach((item) => {
+    //     const append = document.querySelector('.appendHere');
+    //     const li = document.createElement('li');
+    //     const link = document.createElement('a');
+    //     li.className = 'style';
+
+    //     console.log(li);
+    // });
+    for (let i = 0; i < data.length; i++) {
+        // console.log(data[i]);
+        const li = document.createElement('li');
+        console.log(li);
+    }
+}
+// selectItem.forEach((item) => {
+//     // create li element
+//     const li = document.createElement('li');
+//     li.className = 'style';
+//     // document.createTextNode()
+//     li.appendChild(document.createTextNode('hello'));
+//     console.log(li);
+// });
+console.log(selectItem.length);
+// console.log(output[1]);
+// output.add
+// output[i]
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 300) {
         $('header').addClass('fixed-header');

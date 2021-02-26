@@ -1,15 +1,29 @@
 header {
     background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0%
         0% no-repeat padding-box;
+
     box-shadow: 0px 4px 30px #00000033;
     padding: 30px 0px;
-
+    position: relative;
+    &::after {
+        content: url('../images/bg/Bitmap.png');
+        position: absolute;
+        top: 20px;
+        left: 150px;
+    }
+    &::before {
+        content: url('../images/bg/btimap-2.png');
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
     .navbar {
         &-collapse {
-            flex-direction: column;
+            // flex-direction: column;
 
             .form-inline {
                 position: relative;
+                margin-right: -150px;
 
                 input {
                     width: 620px;
@@ -38,9 +52,9 @@ header {
             }
         }
         &-nav {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             li {
-                margin-right: 35px;
+                margin-right: 50px;
                 position: relative;
                 &.active {
                     &::after {
@@ -51,8 +65,11 @@ header {
                     content: '';
                     position: absolute;
                     bottom: 0;
-                    width: 100%;
+                    width: 90%;
                     height: 0px;
+                    left: 50%;
+                    transform: translate(-50%);
+
                     background: #fff;
                 }
                 &:hover {
@@ -93,7 +110,15 @@ header {
     header {
         .navbar-collapse {
             .form-inline {
+                margin-right: 0px;
                 input {
+                    width: 100%;
+                }
+            }
+        }
+        .navbar-nav {
+            li {
+                &::after {
                     width: 100%;
                 }
             }
@@ -112,6 +137,11 @@ header {
 @media (min-width: 576px) and (max-width: 767px) {
 }
 @media (max-width: 575px) {
+    header {
+        &::after {
+            left: 0px;
+        }
+    }
 }
 @media (min-width: 420px) and (max-width: 575px) {
 }
