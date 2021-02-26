@@ -34,6 +34,7 @@ toolsItem.forEach((item) => {
     const li = document.createElement('li');
     // create link
     const link = document.createElement('a');
+    link.className = 'alphabet-link'
     link.textContent = item;
     li.appendChild(link);
     // console.log(item);
@@ -41,18 +42,39 @@ toolsItem.forEach((item) => {
     // item.add
 });
 
-// let output = [];
-// const selectItems = document.querySelectorAll('#alphabet li a');
-let selectItem = [];
+// add toolsItem start
+alphabet.addEventListener('click', function(e){
+    if(e.target.classList.contains('alphabet-link')){
+        let text = e.target.textContent;
+        let a =  businessToolstoolitem.lastElementChild.cloneNode(true);
+        a.children[0].innerHTML = `${text} <span class="delete">x</span>`;
+        businessToolstoolitem.appendChild(a);
+    }
+})
+// add toolsItem end
 
-const select = document.querySelectorAll('#alphabet li a');
-select.forEach((singleItem) => {
-    singleItem.addEventListener('click', () => {
-        selectItem.push(singleItem);
-        // console.log(selectItem);
-        insertData(selectItem);
-    });
-});
+
+// remove recommended toolsItem start
+let businessToolstoolitem = document.querySelector('.business-Tools__tool-item');
+businessToolstoolitem.addEventListener('click', function(e){
+   if(e.target.classList.contains('delete')){
+    e.target.parentElement.parentElement.remove();
+   }
+})
+// remove recommended toolsItem end
+
+// // let output = [];
+// // const selectItems = document.querySelectorAll('#alphabet li a');
+// let selectItem = [];
+
+// const select = document.querySelectorAll('#alphabet li a');
+// select.forEach((singleItem) => {
+//     singleItem.addEventListener('click', () => {
+//         selectItem.push(singleItem);
+//         // console.log(selectItem);
+//         insertData(selectItem);
+//     });
+// });
 function insertData(data) {
     // data.forEach((item) => {
     //     const append = document.querySelector('.appendHere');
