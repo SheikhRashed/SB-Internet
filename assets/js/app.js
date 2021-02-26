@@ -117,9 +117,9 @@ const sticky2 = document.querySelector('.sticky__sidebar.social');
 toggle.addEventListener('click', (e) => {
     sticky.classList.toggle('open');
 });
-toggle2.addEventListener('click', (e) => {
-    sticky2.classList.toggle('open');
-});
+// toggle2.addEventListener('click', (e) => {
+//     sticky2.classList.toggle('open');
+// });
 $('#alphabet').listnav({
     includeAll: false,
     includeNums: false,

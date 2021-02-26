@@ -217,6 +217,24 @@ main {
   background-color: #fff;
 }
 
+.btn {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn--primary {
+  background-color: #0033a1;
+  color: #fff;
+  width: 300px;
+  height: 40px;
+}
+
+.btn--primary:hover {
+  color: #fff;
+}
+
 .card-box {
   padding: 25px;
   background-color: #fff;
@@ -1299,6 +1317,10 @@ main::-webkit-scrollbar-track {
   grid-template-columns: repeat(3, 1fr);
 }
 
+#alphabet li {
+  margin-bottom: 15px;
+}
+
 #alphabet li a {
   font-size: 14px;
   line-height: 40px;
@@ -1369,6 +1391,102 @@ main::-webkit-scrollbar-track {
   #alphabet-nav {
     left: 15px;
     top: 15px;
+  }
+}
+
+body {
+  background-color: #f2f3f4;
+}
+
+.business-Tools {
+  margin-bottom: 45px;
+}
+
+.business-Tools__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0a2240;
+}
+
+.business-Tools .card-box {
+  margin: 35px 0px;
+}
+
+.business-Tools__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.business-Tools__reco-title {
+  font-size: 16px;
+  line-height: 30px;
+  color: #0a2240;
+}
+
+.business-Tools__cross {
+  color: #858d9d;
+  cursor: pointer;
+}
+
+.business-Tools__tool-item {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.business-Tools__tool-item li {
+  background: #00a1e0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 6px 25px;
+  border-radius: 25px;
+}
+
+.business-Tools__tool-item li a {
+  color: #fff;
+}
+
+.business-Tools__tool-item li a span {
+  padding-left: 15px;
+  color: #dde1e9;
+}
+
+.business-Tools__sugest {
+  display: flex;
+  justify-content: space-around;
+}
+
+.business-Tools__sugest h5 {
+  font-size: 16px;
+  line-height: 40px;
+  color: #4f637c;
+  margin-left: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.business-Tools__bottom {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .business-Tools__sugest {
+    flex-direction: column;
+    align-items: center;
+  }
+  .business-Tools .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .business-Tools__sugest h5 {
+    line-height: 25px;
+    margin-left: 0px;
+    margin-bottom: 15px;
   }
 }
 
