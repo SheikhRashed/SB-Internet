@@ -27,10 +27,6 @@ const toolsItem = [
 
 const alphabet = document.querySelector('#alphabet');
 toolsItem.forEach((item) => {
-    // item.add
-    // console.log(item);
-    // create li element
-
     const li = document.createElement('li');
     // create link
     const link = document.createElement('a');
@@ -50,45 +46,14 @@ select.forEach((singleItem) => {
     singleItem.addEventListener('click', () => {
         selectItem.push(singleItem);
         // console.log(selectItem);
-        insertData(selectItem);
     });
 });
-function insertData(data) {
-    // data.forEach((item) => {
-    //     const append = document.querySelector('.appendHere');
-    //     const li = document.createElement('li');
-    //     const link = document.createElement('a');
-    //     li.className = 'style';
-
-    //     console.log(li);
-    // });
-    for (let i = 0; i < data.length; i++) {
-        // console.log(data[i]);
-        const li = document.createElement('li');
-        console.log(li);
-    }
-}
-// selectItem.forEach((item) => {
-//     // create li element
-//     const li = document.createElement('li');
-//     li.className = 'style';
-//     // document.createTextNode()
-//     li.appendChild(document.createTextNode('hello'));
-//     console.log(li);
-// });
-// console.log(selectItem.length);
-// console.log(output[1]);
-// output.add
-// output[i]
 
 const recomendDiv = document.querySelector('.business-Tools__reco');
 // const cross = document.querySelector('.business-Tools__cross');
 const appendDiv = document.querySelectorAll('.append');
 console.log(appendDiv);
-// console.log(appendDiv);
-// appendDiv.addEventListener('click', (item) => {
-//     recomendDiv.classList.toggle('d-block');
-// });
+
 appendDiv.forEach((item) => {
     item.addEventListener('click', () => {
         recomendDiv.classList.toggle('d-none');
