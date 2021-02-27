@@ -315,6 +315,16 @@ main {
   }
 }
 
+.swal2-header {
+  align-items: flex-start;
+}
+
+.swal2-content {
+  text-align: left;
+  line-height: 34px;
+  font-size: 14px;
+}
+
 header {
   background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 30px #00000033;
@@ -1408,7 +1418,7 @@ main::-webkit-scrollbar-track {
 #alphabet li a::before {
   content: '+';
   position: absolute;
-  top: 5px;
+  top: 0px;
   width: 20px;
   height: 20px;
   display: flex;

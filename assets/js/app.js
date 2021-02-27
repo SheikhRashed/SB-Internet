@@ -30,6 +30,7 @@ toolsItem.forEach((item) => {
     const li = document.createElement('li');
     // create link
     const link = document.createElement('a');
+    link.className = 'alphabet-link';
     link.textContent = item;
     li.appendChild(link);
     // console.log(item);
@@ -37,20 +38,30 @@ toolsItem.forEach((item) => {
     // item.add
 });
 
-// let output = [];
-// const selectItems = document.querySelectorAll('#alphabet li a');
-let selectItem = [];
-
-const select = document.querySelectorAll('#alphabet li a');
-select.forEach((singleItem) => {
-    singleItem.addEventListener('click', () => {
-        selectItem.push(singleItem);
-        // console.log(selectItem);
-    });
+// add toolsItem start
+alphabet.addEventListener('click', function (e) {
+    if (e.target.classList.contains('alphabet-link')) {
+        let text = e.target.textContent;
+        let a = businessToolstoolitem.lastElementChild.cloneNode(true);
+        a.children[0].innerHTML = `${text} <span class="delete">x</span>`;
+        businessToolstoolitem.appendChild(a);
+    }
 });
+// add toolsItem end
+
+// remove recommended toolsItem start
+let businessToolstoolitem = document.querySelector(
+    '.business-Tools__tool-item'
+);
+businessToolstoolitem.addEventListener('click', function (e) {
+    if (e.target.classList.contains('delete')) {
+        e.target.parentElement.parentElement.remove();
+    }
+});
+// remove recommended toolsItem end
 
 const recomendDiv = document.querySelector('.business-Tools__reco');
-// const cross = document.querySelector('.business-Tools__cross');
+
 const appendDiv = document.querySelectorAll('.append');
 console.log(appendDiv);
 
@@ -97,11 +108,24 @@ const sticky2 = document.querySelector('.sticky__sidebar.social');
 toggle.addEventListener('click', (e) => {
     sticky.classList.toggle('open');
 });
-// toggle2.addEventListener('click', (e) => {
-//     sticky2.classList.toggle('open');
-// });
+
 $('#alphabet').listnav({
     includeAll: false,
     includeNums: false,
     showCounts: false,
 });
+
+// Business tool suggest form
+
+// Sweetalert delete start
+$('#sendRequest').on('click', function () {
+    Swal.fire({
+        title: 'Success',
+        text: `Thank you for your Business tool suggestion. 
+        Your request will be made available upon approval.`,
+        showCloseButton: true,
+        showConfirmButton: false,
+    });
+});
+
+//Sweetalert delete end
