@@ -1,5 +1,15 @@
+// @ts-nocheck
 'use strict';
-
+// UI Var
+const recomendDiv = document.querySelector('.business-Tools__reco');
+const appendDiv = document.querySelectorAll('.append');
+const alphabet = document.querySelector('#alphabet');
+const render = document.querySelector('.toolbox__render-item');
+const recommendedList = document.querySelector('.business-Tools__tool-item');
+const recommendItemList = document.querySelectorAll(
+    '.business-Tools__tool-item li'
+);
+// Tools box datas
 const toolsItem = [
     'Adobe Cloud',
     'AD Self Service',
@@ -24,8 +34,16 @@ const toolsItem = [
     'bond calculator',
     'forex form',
 ];
+// recommended box datas
 
-const alphabet = document.querySelector('#alphabet');
+let recommendedItem = [
+    'recommend-01',
+    'recommend-02',
+    'recommend-03',
+    'recommend-04',
+    'recommend-05',
+];
+// Render all data and append UI
 toolsItem.forEach((item) => {
     const li = document.createElement('li');
     // create link
@@ -33,21 +51,41 @@ toolsItem.forEach((item) => {
     link.className = 'alphabet-link';
     link.textContent = item;
     li.appendChild(link);
-    // console.log(item);
     alphabet.appendChild(li);
-    // item.add
 });
 
 // add toolsItem start
 alphabet.addEventListener('click', function (e) {
     if (e.target.classList.contains('alphabet-link')) {
         let text = e.target.textContent;
+        recommendedItem.push(text);
         let a = businessToolstoolitem.lastElementChild.cloneNode(true);
         a.children[0].innerHTML = `${text} <span class="delete">x</span>`;
         businessToolstoolitem.appendChild(a);
     }
 });
-// add toolsItem end
+
+recommendedItem.forEach((item) => {
+    // create li element
+    const li = document.createElement('li');
+    li.innerHTML = `
+        <a href="#">
+            ${item}
+            <span class="delete">X</span>
+        </a>
+    `;
+    let data = recommendedList.appendChild(li);
+
+    // append Item on Modal
+    const list2 = document.createElement('li');
+    list2.innerHTML = `
+    <span class="delete">✓</span>
+        <a href="#">
+            ${item}
+        </a>
+    `;
+    render.appendChild(list2);
+});
 
 // remove recommended toolsItem start
 let businessToolstoolitem = document.querySelector(
@@ -60,16 +98,15 @@ businessToolstoolitem.addEventListener('click', function (e) {
 });
 // remove recommended toolsItem end
 
-const recomendDiv = document.querySelector('.business-Tools__reco');
-
-const appendDiv = document.querySelectorAll('.append');
-console.log(appendDiv);
+// Recommended Div adding removing action
 
 appendDiv.forEach((item) => {
     item.addEventListener('click', () => {
         recomendDiv.classList.toggle('d-none');
     });
 });
+
+// Plugin Initalizations
 
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 300) {
