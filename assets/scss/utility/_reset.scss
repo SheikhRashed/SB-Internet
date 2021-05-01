@@ -1,44 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul,
 ol,
 dl {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    &:hover {
-        @extend a;
-    }
-    &:active {
-        @extend a;
-    }
-    &:focus {
-        @extend a;
-    }
+  text-decoration: none;
+  &:hover {
+    @extend a;
+  }
+  &:active {
+    @extend a;
+  }
+  &:focus {
+    @extend a;
+  }
 }
 
 button,
 .btn,
 input {
-    border: none;
-    outline: none;
-    box-shadow: none;
-    &:hover {
-        @extend button;
-    }
-    &:active {
-        @extend button;
-    }
-    &:focus {
-        @extend button;
-    }
+  border: none;
+  outline: none;
+  box-shadow: none;
+  &:hover {
+    @extend button;
+  }
+  &:active {
+    @extend button;
+  }
+  &:focus {
+    @extend button;
+  }
 }
 
 /**
@@ -47,9 +47,9 @@ input {
  */
 
 abbr[title] {
-    border-bottom: none; /* 1 */
-    text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /*
@@ -58,146 +58,152 @@ abbr[title] {
  */
 
 ::-moz-selection {
-    background-color: #b3d4fc; /* 1 */
-    color: #000000; /* 1 */
-    text-shadow: none;
+  background-color: #b3d4fc; /* 1 */
+  color: #000000; /* 1 */
+  text-shadow: none;
 }
 
 ::selection {
-    background-color: #b3d4fc; /* 1 */
-    color: #000000; /* 1 */
-    text-shadow: none;
+  background-color: #b3d4fc; /* 1 */
+  color: #000000; /* 1 */
+  text-shadow: none;
 }
 
 // slick slider
 .slick-slide {
-    outline: none;
+  outline: none;
 }
 
 //  start from here
 body {
-    font-family: BRegular;
+  font-family: BRegular;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
+  width: 5px;
+  height: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #858d9d;
+  background: #858d9d;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #0033a1;
-    border-radius: 10px;
+  background: #0033a1;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #0033a1;
+  background: #0033a1;
 }
 
 main {
-    background-color: #f2f3f4;
-    position: relative;
+  background-color: #f2f3f4;
+  position: relative;
 }
 
 .sticky__sidebar {
-    position: fixed;
-    top: 295px;
+  position: fixed;
+  top: 295px;
+  left: 0px;
+  z-index: 9999;
+  transition: all 0.3s linear;
+  @media (max-width: 1365px) {
+    left: -125px;
+  }
+  &.open {
     left: 0px;
-    z-index: 9999;
-    transition: all 0.3s linear;
-    @media (max-width: 1365px) {
-        left: -125px;
-    }
-    &.open {
-        left: 0px;
-    }
-    li {
-        background-color: #0a2240;
-        align-items: center;
-        padding: 10px 8px;
-        border-radius: 2px;
+  }
+  li {
+    background-color: #0a2240;
+    align-items: center;
+    padding: 10px 8px;
+    border-radius: 2px;
 
-        &.sticky__item-02 {
-            background-color: #0033a1;
-        }
-        &.sticky__item-03 {
-            background-color: #02aadd;
-        }
-        a {
-            span {
-                font-size: 12px;
-                line-height: 19px;
-                margin-left: 15px;
-                color: #fff;
-            }
-        }
+    &.sticky__item-02 {
+      background-color: #0033a1;
     }
-
-    .toggle {
-        width: 30px;
-        height: 30px;
-        padding: 15px;
-        background-color: #0033a1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 50%;
-        right: -30px;
-        transform: translate(0%, -50%);
-        cursor: pointer;
-        @media (min-width: 1366px) {
-            display: none;
-        }
-        i {
-            color: #fff;
-            font-size: 18px;
-        }
+    &.sticky__item-03 {
+      background-color: #02aadd;
     }
-
-    &.social {
-        left: inherit;
-        right: 0px;
-
-        .sticky__item-01 {
-            background-color: #822270;
-        }
-        .sticky__item-02 {
-            background-color: #b34fc5;
-        }
-        .sticky__item-03 {
-            background-color: #ff6611;
-        }
-        .sticky__item-04 {
-            background-color: #675dc6;
-        }
-        @media (max-width: 1365px) {
-            right: -55px;
-        }
-        .toggle {
-            right: inherit;
-            left: -30px;
-            // display: none;
-        }
-        &.open {
-            right: 0px;
-        }
+    a {
+      span {
+        font-size: 12px;
+        line-height: 19px;
+        margin-left: 15px;
+        color: #fff;
+      }
     }
-}
+  }
 
-.sticky__img-wrapper {
-    width: 40px;
-    height: 40px;
+  .toggle {
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    background-color: #0033a1;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    @media (min-width: 1366px) {
+      display: none;
+    }
+    i {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  &.social {
+    left: inherit;
+    right: 0px;
+
+    .sticky__item-01 {
+      background-color: #822270;
+    }
+    .sticky__item-02 {
+      background-color: #b34fc5;
+    }
+    .sticky__item-03 {
+      background-color: #ff6611;
+    }
+    .sticky__item-04 {
+      background-color: #675dc6;
+    }
+    @media (max-width: 1365px) {
+      right: -55px;
+    }
+    .toggle {
+      right: inherit;
+      left: -30px;
+      // display: none;
+    }
+    &.open {
+      right: 0px;
+    }
+  }
+}
+
+.sticky__img-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  .sticky__sidebar {
+    top: 190px;
+  }
 }
