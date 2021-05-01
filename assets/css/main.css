@@ -356,9 +356,63 @@ main {
   line-height: 22px;
 }
 
+.subscription__modal-wrapper h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subscription__modal-wrapper p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+
+.subscription__checkBoxes {
+  background: #4f637c;
+  padding: 25px 35px;
+  box-sizing: border-box;
+}
+
+.subscription__checkBoxes h5 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.subscription__checkBoxes ul li {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.subscription__checkBoxes ul li p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.subscription__checkBoxes ul li span {
+  margin-right: 15px;
+}
+
+.subscription__checkBoxes ul li span input {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 991px) {
+  .subscription__modal-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
 @media (min-width: 575px) {
   .modalReqTool .modal-dialog {
     max-width: 45%;
+  }
+  .modal-dialog.subscription__dialog {
+    max-width: 715px;
+    height: 310px;
   }
 }
 
