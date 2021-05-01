@@ -315,6 +315,47 @@ main {
   border: 1px solid #cdcdcd;
 }
 
+.mannage__title {
+  padding: 12px;
+  background: #4f637c;
+  margin-bottom: 15px;
+}
+
+.mannage__title h5 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.mannage__list {
+  max-height: 250px;
+  overflow-y: auto;
+  margin: 15px 0px;
+}
+
+.mannage__list li {
+  border-bottom: 1px solid #979797;
+  padding-bottom: 15px;
+}
+
+.mannage__list li a {
+  font-size: 12px;
+  line-height: 22px;
+  color: #0089ff;
+}
+
+.custom__link-wrapper P {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.brief {
+  font-size: 14px;
+  line-height: 22px;
+}
+
 @media (min-width: 575px) {
   .modalReqTool .modal-dialog {
     max-width: 45%;
@@ -512,6 +553,46 @@ header .navbar .form-inline .login__name {
   line-height: 24px;
   color: #fff;
   font-family: Bbook;
+}
+
+.bannermwb .bannermwb__item {
+  background: url("../images/Bitmap.png") center center/cover no-repeat;
+  height: 75vh;
+}
+
+.bannermwb .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannermwb .slick-dots li {
+  margin-right: 10px;
+}
+
+.bannermwb .slick-dots li button,
+.bannermwb .slick-dots li .btn:hover,
+.bannermwb .slick-dots li input:hover,
+.bannermwb .slick-dots li .btn:active,
+.bannermwb .slick-dots li input:active,
+.bannermwb .slick-dots li .btn:focus,
+.bannermwb .slick-dots li input:focus {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  font-size: 0px;
+  border: 1px solid #0a2240;
+  transition: all 0.3s linear;
+}
+
+.bannermwb .slick-dots li.slick-active button,
+.bannermwb .slick-dots li.slick-active .btn:hover,
+.bannermwb .slick-dots li.slick-active input:hover,
+.bannermwb .slick-dots li.slick-active .btn:active,
+.bannermwb .slick-dots li.slick-active input:active,
+.bannermwb .slick-dots li.slick-active .btn:focus,
+.bannermwb .slick-dots li.slick-active input:focus {
+  background-color: #0a2240;
 }
 
 @media (max-width: 991px) {
@@ -789,9 +870,92 @@ main::-webkit-scrollbar-track {
   margin-left: 15px;
 }
 
+.quickView.feed .feed__top-bar {
+  padding: 0px;
+}
+
+.importantDates {
+  margin-top: 0px;
+}
+
+.importantDates ul {
+  padding: 0px 40px;
+}
+
+.importantDates ul li {
+  padding: 15px 0px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.importantDates ul li h5 {
+  font-size: 12px;
+  line-height: 26px;
+  color: #0e8a00;
+}
+
+.importantDates ul li .dates-content {
+  justify-content: center;
+}
+
+.importantDates ul li .dates-content .times span {
+  display: block;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.importantDates ul li:nth-last-child(1) {
+  border-bottom: 0px;
+}
+
+.mynotifications {
+  margin-top: 0px;
+}
+
+.mynotifications ul li a span {
+  color: #0089ff;
+}
+
+.mynotifications ul li:nth-last-child(1) a span {
+  color: black;
+}
+
+.myAccess {
+  margin-top: 0px;
+}
+
+.myAccess ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.myAccess ul li::before {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  content: '\2022';
+  color: #3c4b6c;
+}
+
+.myAccess ul li a {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
 @media (max-width: 1200px) {
   .quickView .card-box {
     height: 450px !important;
+  }
+  .importantDates,
+  .mynotifications,
+  .myAccess {
+    max-height: 290px;
+    overflow-y: auto;
+  }
+  .importantDates ul,
+  .mynotifications ul,
+  .myAccess ul {
+    padding: 0px;
   }
 }
 

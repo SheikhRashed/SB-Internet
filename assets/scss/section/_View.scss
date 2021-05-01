@@ -101,11 +101,102 @@
   }
 }
 
+.quickView {
+  &.feed {
+    .feed__top-bar {
+      padding: 0px;
+    }
+  }
+}
+
+// MY important dates
+.importantDates {
+  margin-top: 0px;
+  ul {
+    padding: 0px 40px;
+    li {
+      padding: 15px 0px;
+      h5 {
+        font-size: 12px;
+        line-height: 26px;
+        color: #0e8a00;
+      }
+      .dates-content {
+        justify-content: center;
+        .times {
+          span {
+            display: block;
+            font-size: 14px;
+            line-height: 28px;
+          }
+        }
+      }
+      border-bottom: 1px solid #d8d8d8;
+      &:nth-last-child(1) {
+        border-bottom: 0px;
+      }
+    }
+  }
+}
+
+// my notifications
+.mynotifications {
+  margin-top: 0px;
+  ul {
+    li {
+      a {
+        span {
+          color: #0089ff;
+        }
+      }
+      &:nth-last-child(1) {
+        a {
+          span {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+// myAccess
+.myAccess {
+  margin-top: 0px;
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      position: relative;
+      &::before {
+        position: absolute;
+        left: 0;
+        top: -5px;
+        content: '\2022';
+        color: #3c4b6c;
+      }
+      a {
+        margin-bottom: 15px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
 // Responsive
 @media (max-width: 1200px) {
   .quickView {
     .card-box {
       height: 450px !important;
+    }
+  }
+  // important dates
+  .importantDates,
+  .mynotifications,
+  .myAccess {
+    max-height: 290px;
+    overflow-y: auto;
+    ul {
+      padding: 0px;
     }
   }
 }

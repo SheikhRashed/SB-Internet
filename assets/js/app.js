@@ -22,6 +22,13 @@ $(window).scroll(function () {
   }
 });
 
+$('.bannermwb').slick({
+  dots: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 1600,
+});
+
 $('.feed__slider').slick({
   infinite: true,
   speed: 300,

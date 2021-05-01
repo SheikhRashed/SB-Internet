@@ -1,93 +1,132 @@
 .modal__sucess {
-    // background-color: red;
-    .modal {
-        &-header {
-            padding-bottom: 0px;
-            h5 {
-                margin: 0;
-                font-size: 24px;
-                line-height: 30px;
-                color: #0a2240;
-            }
-        }
-        &-body {
-            p {
-                font-size: 14px;
-                line-height: 28px;
-            }
-            .toolbox__render-item {
-                li {
-                    display: flex;
-                    align-items: center;
-                    span {
-                        border: 1px solid;
-                        width: 20px;
-                        height: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-right: 15px;
-                        color: #0e8a00;
-                        border-color: #979797;
-                    }
-                    a {
-                        font-size: 14px;
-                        line-height: 40px;
-                        color: #858d98;
-                    }
-                }
-            }
-        }
+  // background-color: red;
+  .modal {
+    &-header {
+      padding-bottom: 0px;
+      h5 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 30px;
+        color: #0a2240;
+      }
     }
+    &-body {
+      p {
+        font-size: 14px;
+        line-height: 28px;
+      }
+      .toolbox__render-item {
+        li {
+          display: flex;
+          align-items: center;
+          span {
+            border: 1px solid;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #0e8a00;
+            border-color: #979797;
+          }
+          a {
+            font-size: 14px;
+            line-height: 40px;
+            color: #858d98;
+          }
+        }
+      }
+    }
+  }
 }
 
 .modalReqTool {
-    // display: none;
-    border-radius: 0;
-    .modal {
-        &-header {
-            padding-bottom: 0px;
-            h5 {
-                font-size: 24px;
-                line-height: 30px;
-                margin-left: 0;
-                font-family: BMedium;
-                color: #0a2240;
-                // text-transform: capitalize;
-            }
-        }
-        &-body {
-            .form-group {
-                label {
-                    font-size: 14px;
-                    line-height: 40px;
-                    color: #4f637c;
-                }
-                input {
-                    border-color: #cdcdcd;
-                    &:hover {
-                        border: 1px solid #cdcdcd;
-                    }
-                }
-            }
-        }
+  // display: none;
+  border-radius: 0;
+  .modal {
+    &-header {
+      padding-bottom: 0px;
+      h5 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 0;
+        font-family: BMedium;
+        color: #0a2240;
+        // text-transform: capitalize;
+      }
     }
+    &-body {
+      .form-group {
+        label {
+          font-size: 14px;
+          line-height: 40px;
+          color: #4f637c;
+        }
+        input {
+          border-color: #cdcdcd;
+          &:hover {
+            border: 1px solid #cdcdcd;
+          }
+        }
+      }
+    }
+  }
+}
+
+// mannage modal
+.mannage__title {
+  padding: 12px;
+  background: #4f637c;
+  margin-bottom: 15px;
+  h5 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+  }
+}
+.mannage__list {
+  max-height: 250px;
+  overflow-y: auto;
+  margin: 15px 0px;
+  li {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 15px;
+    a {
+      font-size: 12px;
+      line-height: 22px;
+      color: #0089ff;
+    }
+  }
+}
+
+.custom__link-wrapper {
+  P {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.brief {
+  font-size: 14px;
+  line-height: 22px;
 }
 
 @media (min-width: 575px) {
-    .modalReqTool {
-        .modal-dialog {
-            max-width: 45%;
-        }
+  .modalReqTool {
+    .modal-dialog {
+      max-width: 45%;
     }
+  }
 }
-
 
 .swal2-header {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 .swal2-content {
-    text-align: left;
-    line-height: 34px;
-    font-size: 14px;
+  text-align: left;
+  line-height: 34px;
+  font-size: 14px;
 }
