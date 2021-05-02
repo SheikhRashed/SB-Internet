@@ -115,7 +115,7 @@ main {
   z-index: 9999;
   transition: all 0.3s linear;
   @media (max-width: 1365px) {
-    left: -125px;
+    left: -135px;
   }
   &.open {
     left: 0px;
@@ -133,11 +133,51 @@ main {
       background-color: #02aadd;
     }
     a {
+      // color: #fff;
       span {
         font-size: 12px;
         line-height: 19px;
         margin-left: 15px;
         color: #fff;
+      }
+    }
+
+    .dropdown-toggle {
+      color: transparent;
+    }
+    .dropdown-menu {
+      .dropdown-item {
+        font-size: 12px;
+        color: #fff;
+      }
+    }
+
+    &.dropright .dropdown-menu {
+      margin-top: -11px;
+    }
+
+    &.sticky__item-01 {
+      .dropdown-menu {
+        background-color: #0a2240;
+
+        .dropdown-item {
+          &:focus,
+          &:hover {
+            background-color: darken(#0a2240, 10);
+          }
+        }
+      }
+    }
+    &.sticky__item-02 {
+      .dropdown-menu {
+        background-color: #0033a1;
+
+        .dropdown-item {
+          &:focus,
+          &:hover {
+            background-color: darken(#0033a1, 10);
+          }
+        }
       }
     }
   }

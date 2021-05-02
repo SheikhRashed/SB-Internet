@@ -124,7 +124,7 @@ main {
 
 @media (max-width: 1365px) {
   .sticky__sidebar {
-    left: -125px;
+    left: -135px;
   }
 }
 
@@ -152,6 +152,35 @@ main {
   line-height: 19px;
   margin-left: 15px;
   color: #fff;
+}
+
+.sticky__sidebar li .dropdown-toggle {
+  color: transparent;
+}
+
+.sticky__sidebar li .dropdown-menu .dropdown-item {
+  font-size: 12px;
+  color: #fff;
+}
+
+.sticky__sidebar li.dropright .dropdown-menu {
+  margin-top: -11px;
+}
+
+.sticky__sidebar li.sticky__item-01 .dropdown-menu {
+  background-color: #0a2240;
+}
+
+.sticky__sidebar li.sticky__item-01 .dropdown-menu .dropdown-item:focus, .sticky__sidebar li.sticky__item-01 .dropdown-menu .dropdown-item:hover {
+  background-color: #030b14;
+}
+
+.sticky__sidebar li.sticky__item-02 .dropdown-menu {
+  background-color: #0033a1;
+}
+
+.sticky__sidebar li.sticky__item-02 .dropdown-menu .dropdown-item:focus, .sticky__sidebar li.sticky__item-02 .dropdown-menu .dropdown-item:hover {
+  background-color: #00236e;
 }
 
 .sticky__sidebar .toggle {
@@ -1004,6 +1033,61 @@ main::-webkit-scrollbar-track {
   margin-left: 15px;
 }
 
+.quickView__main-content {
+  position: relative;
+  z-index: 1;
+}
+
+.quickView__main-content ul {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay__shape {
+  overflow: hidden;
+}
+
+.overlay__shape span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0033a1;
+  border: 0px;
+  cursor: pointer;
+}
+
+.overlay__shape span.left {
+  left: 0px;
+}
+
+.overlay__shape span.left::before {
+  content: '';
+  position: absolute;
+  right: -25px;
+  width: 50px;
+  border: 0px;
+  height: 50px;
+  background: #fff;
+}
+
+.overlay__shape span.right {
+  right: 0px;
+}
+
+.overlay__shape span.right::after {
+  content: '';
+  position: absolute;
+  left: -25px;
+  width: 50px;
+  border: 0px;
+  height: 50px;
+  background: #fff;
+}
+
 @media (max-width: 1200px) {
   .quickView .card-box {
     height: 450px !important;
@@ -1225,6 +1309,7 @@ main::-webkit-scrollbar-track {
 .tabs__video-title span.upload-ago {
   font-size: 9px;
   line-height: 18px;
+  color: #3c4b6c;
 }
 
 .tabs__video-info span {

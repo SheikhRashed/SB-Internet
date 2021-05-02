@@ -76,6 +76,111 @@
   </header>
   <!-- Header section end -->
   <main class="position-relative">
+
+        <!-- STicky sidebar  -->
+        <ul class="sticky__sidebar">
+
+
+          <li class="sticky__item sticky__item-01 dropright">
+            <a class="dropdown-toggle d-flex" href="#" id="dropright_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sticky__img-wrapper">
+                <img src="assets/images/sticky/icn_people-1.png" alt="img">
+              </div>
+              <span>Employee <br> services</span>
+            </a>
+            
+            <div class="dropdown-menu" aria-labelledby="dropright_1">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li>
+    
+          <li class="sticky__item sticky__item-02 dropright">
+            <a class="dropdown-toggle d-flex" href="#" id="dropright_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sticky__img-wrapper">
+                <img src="assets/images/sticky/color.png" alt="img">
+              </div>
+              <span>Employee <br> support</span>
+            </a>
+            
+            <div class="dropdown-menu" aria-labelledby="dropright_2">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li>
+    
+    
+          <li class="sticky__item sticky__item-03">
+            <a href="#" class="d-flex">
+              <div class="sticky__img-wrapper">
+                <img src="assets/images/sticky/internet.png" alt="img">
+              </div>
+              <span>Internet <br> banking</span>
+            </a>
+          </li>
+    
+          <li class="toggle">
+            <i class="fas fa-cog"></i>
+          </li>
+        </ul>
+      <ul class="sticky__sidebar social">
+        <li class="sticky__item sticky__item-01">
+          <a href="#" class="d-flex">
+          <div class="sticky__img-wrapper">
+            <img src="assets/images/sticky/icn_share-android.png" alt="img">
+          
+          </div>
+           
+          </a>
+        </li>
+        <li class="sticky__item sticky__item-02">
+          <a href="#" class="d-flex">
+          <div class="sticky__img-wrapper">
+            <img src="assets/images/sticky/female.png" alt="img">
+          </div>
+           
+          </a>
+        </li>
+        <li class="sticky__item sticky__item-03">
+          <a href="#" class="d-flex">
+          <div class="sticky__img-wrapper">
+            <img src="assets/images/sticky/bell.png" alt="img">
+          </div>
+          </a>
+        </li>
+        <!-- <li class="sticky__item sticky__item-04">
+          <a href="#" class="d-flex">
+          <div class="sticky__img-wrapper">
+            <img src="assets/images/sticky/plus.png" alt="img">
+          </div>
+         
+          </a>
+        </li> -->
+      
+        <li class="toggle toggle2">
+          <i class="fas fa-cog"></i>
+        </li>
+        </ul>
+
+
+
     <section>
       <div class="container">
         <div class="bannermwb">
@@ -160,6 +265,10 @@
                   </div>
                 </li>
               </ul>
+              <div class="overlay__shape">
+                <span class="left"></span>
+                <span class="right"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -201,7 +310,7 @@
               <h5 class="feed__top-bar-title">My quick access</h5>
             </div>
             <div class="quickView__main-content myAccess">
-              <ul>
+              <ul class="px-5">
                 <li><a href="#">0365 learning hub</a></li>
                 <li><a href="#">My access</a></li>
                 <li><a href="#">O365 access</a></li>
@@ -212,6 +321,10 @@
                 <li><a href="#">Project Online</a></li>
                 <li><a href="#">Forms</a></li>
               </ul>
+              <div class="overlay__shape">
+                <span class="left"></span>
+                <span class="right"></span>
+              </div>
             </div>
             <a href="#"  class="rAbs" type="button"  data-toggle="modal" data-target="#mannage">
               <p class="text-right pt-0"> Manage my quick links >
@@ -292,7 +405,7 @@
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="group" role="tabpanel" aria-labelledby="group-tab">
-                <div class="news__bg">
+                <a class="news__bg" href="#">
                   <div class="news__bg-imgwrap">
                     <img src="assets/images/bg/news-banner.png" alt="banner">
 
@@ -333,10 +446,10 @@
                   </div>
                   </div>
 
-                </div>
+                </a>
               </div>
               <div class="tab-pane fade" id="pbb" role="tabpanel" aria-labelledby="SA-tab">
-                <div class="news__bg">
+                <a class="news__bg" href="#">
                   <div class="news__bg-imgwrap">
                     <img src="assets/images/bg/news-banner.png" alt="banner">
 
@@ -377,10 +490,10 @@
                   </div>
                   </div>
 
-                </div>
+                </a>
               </div>
               <div class="tab-pane fade" id="subscribe" role="tabpanel" aria-labelledby="subscribe-tab">
-                <div class="news__bg">
+                <a class="news__bg" href="#">
                   <div class="news__bg-imgwrap">
                     <img src="assets/images/bg/news-banner.png" alt="banner">
 
@@ -421,10 +534,10 @@
                   </div>
                   </div>
 
-                </div>
+                </a>
               </div>
               <div class="tab-pane fade" id="bookmark" role="tabpanel" aria-labelledby="bookmark-tab">
-                <div class="news__bg">
+                <a class="news__bg" href="#">
                   <div class="news__bg-imgwrap">
                     <img src="assets/images/bg/news-banner.png" alt="banner">
 
@@ -465,7 +578,7 @@
                   </div>
                   </div>
 
-                </div>
+                </a>
               </div>
             </div>
           </div>
