@@ -36,10 +36,19 @@ input:hover, button:active,
 .btn:active,
 input:active, button:focus,
 .btn:focus,
+input:focus {
+  border: none;
+}
+
+button, button:hover,
+.btn:hover,
+input:hover, button:active,
+.btn:active,
+input:active, button:focus,
+.btn:focus,
 input:focus,
 .btn,
 input {
-  border: none;
   outline: none;
   box-shadow: none;
 }
@@ -1317,7 +1326,13 @@ main::-webkit-scrollbar-track {
   margin-left: 45px;
 }
 
-.feed__top-bar .input__wrapper span {
+.feed__top-bar .input__wrapper button,
+.feed__top-bar .input__wrapper .btn:hover,
+.feed__top-bar .input__wrapper input:hover,
+.feed__top-bar .input__wrapper .btn:active,
+.feed__top-bar .input__wrapper input:active,
+.feed__top-bar .input__wrapper .btn:focus,
+.feed__top-bar .input__wrapper input:focus {
   position: absolute;
   right: 0px;
   background-color: #0089ff;

@@ -533,12 +533,12 @@
                     </div>
                     <h5 class="feed__top-bar-title">forms</h5>
                   </div>
-                  <div class="input__wrapper">
+                  <form class="input__wrapper">
                     <input type="text" placeholder="Search for forms">
-                    <span>
+                    <button type="submit">
                       <img src="assets//images/icons/icon-search.png" alt="icon-search">
-                    </span>
-                  </div>
+                    </button type="submit">
+                  </form>
                 </div>
                 <div class="quickView__main-content">
                   <div class="row px-4">
@@ -587,12 +587,12 @@
                     </div>
                     <h5 class="feed__top-bar-title">Contact details</h5>
                   </div>
-                  <div class="input__wrapper">
+                  <form class="input__wrapper">
                     <input type="text" class="sm__input" placeholder="Homeloans">
-                    <span>
+                    <button type="submit">
                       <img src="assets//images/icons/call.png" alt="icon-call">
-                    </span>
-                  </div>
+                    </button>
+                  </form>
                 </div>
                 <div class="quickView__main-content">
                   <ul id="alphabet-sm" class=" quickView__main-contentItem">
@@ -708,7 +708,125 @@
       <section class="tabs">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-8 d-flex align-items-end">
+                  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscriptionModal">
+  My Subscription
+</button>
+
+<!-- Modal -->
+<div class="modal subscription__modal fade" id="subscriptionModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalTitle" aria-hidden="true">
+  <div class="modal-dialog subscription__dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="row">
+        <div class="col-lg-4">
+         <div class="subscription__modal-wrapper">
+          <h5 class="subscription__Modal-title">My subscriptions</h5>
+          <p class="brief">Choose your favourite news topics and get the latest articles delivered directly to your mailbox.</p>
+
+         </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="subscription__checkBoxes">
+            <h5 class="subscription__modal-subtitle">
+              Select the business topics you would like to receive. 
+            </h5>
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li class="d-flex">
+                    <span>
+                    <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                    />
+                    </span>
+                    <p class="mb-0">Group News</p>
+                  </li>
+                  <li class="d-flex">
+                    <span>
+                    <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                    />
+                    </span>
+                    <p class="mb-0">South Africa News</p>
+                  </li>
+                  <li class="d-flex">
+                    <span>
+                    <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                    />
+                    </span>
+                    <p class="mb-0"> Corporate Functions</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li class="d-flex">
+                    <span>
+                    <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                    />
+                    </span>
+                    <p class="mb-0">Growing Africa</p>
+                  </li>
+                  <li class="d-flex">
+                    <span>
+                    <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                    />
+                    </span>
+                    <p class="mb-0"> Technology</p>
+                  </li>
+                  <li class="d-flex">
+                    <span>
+                    <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkboxNoLabel"
+                    value=""
+                    aria-label="..."
+                    />
+                    </span>
+                    <p class="mb-0">Lifestyle</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  
+    </div>
+  </div>
+</div>
 
             </div>
             <div class="col-lg-4 mt-5 pt-3">

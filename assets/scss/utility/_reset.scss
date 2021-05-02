@@ -23,11 +23,13 @@ a {
     @extend a;
   }
 }
+button {
+  border: none;
+}
 
 button,
 .btn,
 input {
-  border: none;
   outline: none;
   box-shadow: none;
   &:hover {
