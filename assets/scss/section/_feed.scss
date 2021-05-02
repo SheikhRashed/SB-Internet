@@ -1,5 +1,6 @@
 .feed {
   padding: 40px 0px;
+
   .card-box {
     height: 450px;
     max-height: 100%;
@@ -396,5 +397,9 @@
   .rAbs,
   .quickView__content p {
     font-size: 14px;
+  }
+
+  .quickView.feed {
+    margin-top: 0px;
   }
 }

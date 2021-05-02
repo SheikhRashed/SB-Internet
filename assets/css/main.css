@@ -609,9 +609,8 @@ header .navbar .form-inline .login__name {
   font-family: Bbook;
 }
 
-.bannermwb .bannermwb__item {
-  background: url("../images/Bitmap.png") center center/cover no-repeat;
-  height: 75vh;
+.bannermwb .bannermwb__item img {
+  margin-top: 15px;
 }
 
 .bannermwb .slick-dots {
@@ -1677,6 +1676,9 @@ main::-webkit-scrollbar-track {
   .rAbs,
   .quickView__content p {
     font-size: 14px;
+  }
+  .quickView.feed {
+    margin-top: 0px;
   }
 }
 
