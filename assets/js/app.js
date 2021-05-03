@@ -1,14 +1,123 @@
 // @ts-nocheck
 'use strict';
-// UI Var
+
+'use strict';
+
+const toolsItem = [
+  'Adobe Cloud',
+  'AD Self Service',
+  'All Employee Guide',
+  'Access request form',
+  'Access revoke form',
+  'Axure RP Cloud',
+  'Adobe Cloud Analytics',
+  'ATM IT Incident​',
+  'AD Self Service',
+  'Access revoke form',
+  'AML IT Incident Compliance',
+  'ARIS Script IT Incident',
+  'All Employee Guide',
+  'Axure RP Cloud',
+  'Assurance IT Incident',
+  'Remedy',
+  'New Account application',
+  'Bond Calculator',
+  'Pre-Approval bond application',
+  'forms',
+  'bond calculator',
+  'forex form',
+];
+
+const alphabet = document.querySelector('#alphabet');
+toolsItem.forEach((item) => {
+  // item.add
+  // console.log(item);
+  // create li element
+
+  const li = document.createElement('li');
+  // create link
+  const link = document.createElement('a');
+  link.className = 'alphabet-link';
+  link.textContent = item;
+  li.appendChild(link);
+  // console.log(item);
+  alphabet.appendChild(li);
+  // item.add
+});
+
+// add toolsItem start
+alphabet.addEventListener('click', function (e) {
+  if (e.target.classList.contains('alphabet-link')) {
+    let text = e.target.textContent;
+    // let a =  businessToolstoolitem.lastElementChild.cloneNode(true);
+    let li = document.createElement('li');
+    let a = document.createElement('a');
+    a.href = '#';
+    a.innerHTML = `${text} <span class="delete">x</span>`;
+    li.appendChild(a);
+    businessToolstoolitem.appendChild(li);
+  }
+});
+// add toolsItem end
+
+// remove recommended toolsItem start
+let businessToolstoolitem = document.querySelector(
+  '.business-Tools__tool-item'
+);
+businessToolstoolitem.addEventListener('click', function (e) {
+  if (e.target.classList.contains('delete')) {
+    e.target.parentElement.parentElement.remove();
+  }
+});
+// remove recommended toolsItem end
+
+// Recommended success start
+{
+  let toolboxSuccess = document.getElementById('toolbox-success');
+  let toolboxRenderItem = document.getElementById('toolbox__render-item');
+
+  toolboxSuccess.addEventListener('click', function (e) {
+    [...businessToolstoolitem.children].forEach((item) => {
+      let text = item.innerText;
+      let lastIndex = text.lastIndexOf(' ');
+      text = text.substring(0, lastIndex);
+      let li = liGenerator(text);
+      toolboxRenderItem.appendChild(li);
+    });
+
+    // modal hidden remove item
+    $('#exampleModalCenter').on('hidden.bs.modal', function () {
+      [...toolboxRenderItem.children].forEach((item) => {
+        item.remove();
+      });
+    });
+  });
+
+  function liGenerator(data) {
+    let li = document.createElement('li');
+    li.innerHTML = `
+        <span>✓</span>
+        <a href="#">${data}</a>
+        `;
+    return li;
+  }
+}
+// Recommended success end
+
+function insertData(data) {
+  for (let i = 0; i < data.length; i++) {
+    const li = document.createElement('li');
+    console.log(li);
+  }
+}
+
 const recomendDiv = document.querySelector('.business-Tools__reco');
 const appendDiv = document.querySelectorAll('.append');
-const alphabet = document.querySelector('#alphabet');
-const render = document.querySelector('.toolbox__render-item');
-const recommendedList = document.querySelector('.business-Tools__tool-item');
-const recommendItemList = document.querySelectorAll(
-  '.business-Tools__tool-item li'
-);
+appendDiv.forEach((item) => {
+  item.addEventListener('click', () => {
+    recomendDiv.classList.toggle('d-none');
+  });
+});
 
 // Plugin Initalizations
 
