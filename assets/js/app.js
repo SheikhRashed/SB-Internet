@@ -29,6 +29,23 @@ $('.bannermwb').slick({
   autoplaySpeed: 1600,
 });
 
+$('.quickView__slider-1').slick({
+  dots: false,
+  arrows: true,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  prevArrow: '.left',
+  nextArrow: '.right',
+});
+$('.quickView__slider-2').slick({
+  dots: false,
+  arrows: true,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  prevArrow: '.left.left-2',
+  nextArrow: '.right.right-2',
+});
+
 $('.feed__slider').slick({
   infinite: true,
   speed: 300,

@@ -30,23 +30,16 @@ a, a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-button, button:hover,
-.btn:hover,
-input:hover, button:active,
-.btn:active,
-input:active, button:focus,
-.btn:focus,
-input:focus {
+button {
   border: none;
 }
 
-button, button:hover,
-.btn:hover,
-input:hover, button:active,
-.btn:active,
-input:active, button:focus,
-.btn:focus,
-input:focus,
+button:focus {
+  border: none;
+  outline: none;
+}
+
+button,
 .btn,
 input {
   outline: none;
@@ -375,7 +368,7 @@ main {
 
 .mannage__list li {
   border-bottom: 1px solid #979797;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
 .mannage__list li a {
@@ -384,9 +377,29 @@ main {
   color: #0089ff;
 }
 
-.custom__link-wrapper P {
+.mannage__list li .editicons {
+  color: #000;
+}
+
+.mannage__list li .editicons span {
+  margin: 0px 5px;
+  transition: all 0.2s linear;
+}
+
+.mannage__list li .editicons span:hover {
+  transform: translateY(1px);
+}
+
+.mannage__list li .editicons span i {
+  font-size: 16px;
+}
+
+.custom__link-wrapper a p {
+  color: #000 !important;
   font-size: 14px;
   line-height: 21px;
+  padding-top: 0px !important;
+  margin-bottom: 15px !important;
 }
 
 .brief {
@@ -507,10 +520,7 @@ header .navbar-collapse .form-inline input[placeholder] {
   line-height: 20px;
 }
 
-header .navbar-collapse .form-inline button.btn,
-header .navbar-collapse .form-inline .btn:hover,
-header .navbar-collapse .form-inline .btn:active,
-header .navbar-collapse .form-inline .btn:focus {
+header .navbar-collapse .form-inline button.btn {
   position: absolute;
   right: 0px;
   height: 40px;
@@ -661,13 +671,7 @@ header .navbar .form-inline .login__name {
   margin-right: 10px;
 }
 
-.bannermwb .slick-dots li button,
-.bannermwb .slick-dots li .btn:hover,
-.bannermwb .slick-dots li input:hover,
-.bannermwb .slick-dots li .btn:active,
-.bannermwb .slick-dots li input:active,
-.bannermwb .slick-dots li .btn:focus,
-.bannermwb .slick-dots li input:focus {
+.bannermwb .slick-dots li button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -676,13 +680,7 @@ header .navbar .form-inline .login__name {
   transition: all 0.3s linear;
 }
 
-.bannermwb .slick-dots li.slick-active button,
-.bannermwb .slick-dots li.slick-active .btn:hover,
-.bannermwb .slick-dots li.slick-active input:hover,
-.bannermwb .slick-dots li.slick-active .btn:active,
-.bannermwb .slick-dots li.slick-active input:active,
-.bannermwb .slick-dots li.slick-active .btn:focus,
-.bannermwb .slick-dots li.slick-active input:focus {
+.bannermwb .slick-dots li.slick-active button {
   background-color: #0a2240;
 }
 
@@ -1049,56 +1047,41 @@ main::-webkit-scrollbar-track {
 
 .overlay__shape span {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50% !important;
+  transform: translateY(-50%) !important;
   display: inline-block;
-  width: 50px;
+  width: 25px;
   height: 50px;
-  border-radius: 50%;
-  background-color: #0033a1;
+  background-color: #0033a1 !important;
   border: 0px;
   cursor: pointer;
 }
 
 .overlay__shape span.left {
   left: 0px;
-}
-
-.overlay__shape span.left::before {
-  content: '';
-  position: absolute;
-  right: -25px;
-  width: 50px;
-  border: 0px;
-  height: 50px;
-  background: #fff;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 .overlay__shape span.right {
   right: 0px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
-.overlay__shape span.right::after {
-  content: '';
-  position: absolute;
-  left: -25px;
-  width: 50px;
-  border: 0px;
-  height: 50px;
-  background: #fff;
+.overlay__shape.overlay__shape-2 span {
+  top: 65% !important;
 }
 
 @media (max-width: 1200px) {
   .quickView .card-box {
     height: 450px !important;
   }
-  .importantDates,
   .mynotifications,
   .myAccess {
     max-height: 290px;
     overflow-y: auto;
   }
-  .importantDates ul,
   .mynotifications ul,
   .myAccess ul {
     padding: 0px;
@@ -1210,13 +1193,7 @@ main::-webkit-scrollbar-track {
   background-color: #000;
 }
 
-.tabs__slider .slick-dots li button,
-.tabs__slider .slick-dots li .btn:hover,
-.tabs__slider .slick-dots li input:hover,
-.tabs__slider .slick-dots li .btn:active,
-.tabs__slider .slick-dots li input:active,
-.tabs__slider .slick-dots li .btn:focus,
-.tabs__slider .slick-dots li input:focus {
+.tabs__slider .slick-dots li button {
   font-size: 0px;
 }
 
@@ -1411,13 +1388,7 @@ main::-webkit-scrollbar-track {
   margin-left: 45px;
 }
 
-.feed__top-bar .input__wrapper button,
-.feed__top-bar .input__wrapper .btn:hover,
-.feed__top-bar .input__wrapper input:hover,
-.feed__top-bar .input__wrapper .btn:active,
-.feed__top-bar .input__wrapper input:active,
-.feed__top-bar .input__wrapper .btn:focus,
-.feed__top-bar .input__wrapper input:focus {
+.feed__top-bar .input__wrapper button {
   position: absolute;
   right: 0px;
   background-color: #0089ff;
@@ -1490,24 +1461,12 @@ main::-webkit-scrollbar-track {
   margin: 0px 8px;
 }
 
-.feed .system__status .slick-dots li.slick-active button,
-.feed .system__status .slick-dots li.slick-active .btn:hover,
-.feed .system__status .slick-dots li.slick-active input:hover,
-.feed .system__status .slick-dots li.slick-active .btn:active,
-.feed .system__status .slick-dots li.slick-active input:active,
-.feed .system__status .slick-dots li.slick-active .btn:focus,
-.feed .system__status .slick-dots li.slick-active input:focus {
+.feed .system__status .slick-dots li.slick-active button {
   background-color: #0a2240;
   border-color: transparent;
 }
 
-.feed .system__status .slick-dots li button,
-.feed .system__status .slick-dots li .btn:hover,
-.feed .system__status .slick-dots li input:hover,
-.feed .system__status .slick-dots li .btn:active,
-.feed .system__status .slick-dots li input:active,
-.feed .system__status .slick-dots li .btn:focus,
-.feed .system__status .slick-dots li input:focus {
+.feed .system__status .slick-dots li button {
   width: 8px;
   height: 8px;
   border-radius: 50%;

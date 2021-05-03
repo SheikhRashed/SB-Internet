@@ -93,19 +93,37 @@
   margin: 15px 0px;
   li {
     border-bottom: 1px solid #979797;
-    padding-bottom: 15px;
+    padding: 15px;
     a {
       font-size: 12px;
       line-height: 22px;
       color: #0089ff;
     }
+    .editicons {
+      color: #000;
+      span {
+        margin: 0px 5px;
+        transition: all 0.2s linear;
+        &:hover {
+          transform: translateY(1px);
+        }
+        i {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 
 .custom__link-wrapper {
-  P {
-    font-size: 14px;
-    line-height: 21px;
+  a {
+    p {
+      color: #000 !important;
+      font-size: 14px;
+      line-height: 21px;
+      padding-top: 0px !important;
+      margin-bottom: 15px !important;
+    }
   }
 }
 

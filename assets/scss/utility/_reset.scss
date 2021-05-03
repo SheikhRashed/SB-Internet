@@ -25,6 +25,10 @@ a {
 }
 button {
   border: none;
+  &:focus {
+    border: none;
+    outline: none;
+  }
 }
 
 button,
@@ -32,15 +36,6 @@ button,
 input {
   outline: none;
   box-shadow: none;
-  &:hover {
-    @extend button;
-  }
-  &:active {
-    @extend button;
-  }
-  &:focus {
-    @extend button;
-  }
 }
 
 /**
@@ -226,7 +221,6 @@ main {
     .toggle {
       right: inherit;
       left: -30px;
-      // display: none;
     }
     &.open {
       right: 0px;

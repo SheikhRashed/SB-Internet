@@ -1,1097 +1,1118 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SB-intranet</title>
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="assets/css/all.min.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- Slick slider -->
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <!-- Main css -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SB-intranet</title>
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="assets/css/all.min.css" />
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <!-- Slick slider -->
-  <link rel="stylesheet" href="assets/css/slick.css" />
-  <!-- Main css -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
+    <body>
+        <!-- Header section start -->
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/badge.png" alt="" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-<body>
-  <!-- Header section start -->
-  <header>
-    <nav class="navbar navbar-expand-xl navbar-dark ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/badge.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <a href="#" class="d-block d-xl-none">
+                                <form class="form-inline mt-0 justify-content-end pl-3">
+                                    <div class="login__Img mr-3">
+                                        <img src="assets/images/pepole/pepole-03.png" alt="pepole-03" />
+                                    </div>
+                                    <div class="login__name">
+                                        <span class="text-white">Wilson,Bongs N</span>
+                                    </div>
+                                </form>
+                            </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My Workbench </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">My Business tools</a>
+                            </li>
+                            <li class="nav-ite m">
+                                <a class="nav-link" href="#">More for me</a>
+                            </li>
+                        </ul>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search for files, pepole or pages" aria-label="Search" />
+                            <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
 
-            <a href="#" class="d-block d-xl-none">
-              <form class="form-inline mt-0 justify-content-end pl-3">
-                <div class="login__Img mr-3">
-                  <img src="assets/images/pepole/pepole-03.png" alt="pepole-03">
+                    <a href="#" class="d-none d-xl-block">
+                        <form class="form-inline">
+                            <div class="login__Img mr-3">
+                                <img src="assets/images/pepole/pepole-03.png" alt="pepole" />
+                            </div>
+                            <div class="login__name">
+                                <span class="text-white">Wilson,Bongs N</span>
+                            </div>
+                        </form>
+                    </a>
                 </div>
-                <div class="login__name">
-                  <span class="text-white">Wilson,Bongs N</span>
-                </div>
-              </form>
-            </a>
-            <li class="nav-item  ">
-              <a class="nav-link" href="#">My Workbench </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">My Business tools</a>
-            </li>
-            <li class="nav-ite m">
-              <a class="nav-link " href="#">More for me</a>
-            </li>
-           
-
-          </ul>
-
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search for files, pepole or pages"
-              aria-label="Search">
-            <button class="btn  my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-          </form>
-        </div>
-
-        <a href="#" class=" d-none d-xl-block">
-          <form class="form-inline">
-            <div class="login__Img mr-3">
-              <img src="assets/images/pepole/pepole-03.png" alt="pepole">
-            </div>
-            <div class="login__name">
-              <span class="text-white">Wilson,Bongs N</span>
-            </div>
-          </form>
-        </a>
-      </div>
-    </nav>
-  </header>
-  <!-- Header section end -->
-
-<main style="position: relative;">
-  <ul class="sticky__sidebar">
-    <li class="sticky__item sticky__item-01">
-      <a href="#" class="d-flex">
-        <div class="sticky__img-wrapper">
-          <img src="assets/images/sticky/icn_people-1.png" alt="img">
-        </div>
-        <span>Employee <br> services</span>
-      </a>
-    </li>
-    <li class="sticky__item sticky__item-02">
-      <a href="#" class="d-flex">
-        <div class="sticky__img-wrapper">
-          <img src="assets/images/sticky/color.png" alt="img">
-        </div>
-        <span>Employee <br> support</span>
-      </a>
-    </li>
-    <li class="sticky__item sticky__item-03">
-      <a href="#" class="d-flex">
-        <div class="sticky__img-wrapper">
-          <img src="assets/images/sticky/internet.png" alt="img">
-        </div>
-        <span>Internet <br> banking</span>
-      </a>
-    </li>
-
-    <li class="toggle">
-      <i class="fas fa-cog"></i>
-    </li>
-  </ul>
-
-  <!-- notes  section start -->
-  <section class="notes py-4">
-    <div class="container">
-      <div class="row">
-        <h5 class="notes__title">
-          Dates to note
-        </h5>
-  
-      </div>
-      <div class="notes__items d-flex justify-content-start text-nowrap overflow-auto overflow-auto">
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/blue.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Vacation leave</h5>
-            <a href="#" class="rAbs">
-              <span>Manage Leave ></span>
-            </a>
-          </div>
-        </div>
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/blue.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Vacation leave</h5>
-            <a href="#" class="rAbs">
-              <span>Manage Leave ></span>
-            </a>
-          </div>
-        </div>
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/orange.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Client conduct training due</h5>
-            <div class="link__wrapper ">
-              <a href="#" class="rAbs">
-                <span>Manage Leave ></span>
-              </a>
-              <a href="#" class="rAbs">
-                <span>see Details ></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/blue.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Freedom day</h5>
-            <a href="#" class="rAbs">
-              <span>Manage Leave ></span>
-            </a>
-          </div>
-        </div>
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/lOrange.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Vacation leave</h5>
-            <a href="#" class="rAbs">
-              <span>Manage Leave ></span>
-            </a>
-          </div>
-        </div>
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/blue.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Vacation leave</h5>
-            <div class="link__wrapper ">
-              <a href="#" class="rAbs">
-                <span>View features ></span>
-              </a>
-              <a href="#" class="rAbs">
-                <span>Acess demo ></span>
-              </a>
-              <a href="#" class="rAbs">
-                <span>Complete Training></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/blue.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Vacation leave</h5>
-            <a href="#" class="rAbs">
-              <span>Manage Leave ></span>
-            </a>
-          </div>
-        </div>
-        <div class="notes__item pl-0">
-          <div class="card-box notes__card">
-            <div class="notes__date d-flex">
-              <div class="notes__img-wrapper">
-                <img src="assets/images/round/blue.svg" alt="blue">
-              </div>
-              <div class="notes__day ml-2">
-                <h5>Fri</h5>
-                <span>24 jan</span>
-              </div>
-            </div>
-            <h5 class="notes__content">Vacation leave</h5>
-            <a href="#" class="rAbs">
-              <span>Manage Leave ></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- notes  section end -->
-
-  <!-- Quick-View  section start -->
-  <section class="quickView feed">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card-box shadow">
-            <div class="feed__top-bar">
-              <div class="feed__social-img">
-                <div class="feed__social-img">
-                  <img src="assets/images/social-icons/noti.png" alt="noti">
-                </div>
-               </div>
-              <h5 class="feed__top-bar-title">My notifications</h5>
-            </div>
-            <div class="quickView__main-content">
-              <ul>
-                <li><a href="#">
-                  <img src="assets/images/notifications/alert.png" alt="alerts">
-                  <span>Your AML training will expire in 3 days</span>
-                </a></li>
-                <li><a href="#">
-                  <img src="assets/images/notifications/error.png" alt="error">
-                  <span>Untapped opportunities in the Soft Drinks market in Africa</span>
-                </a></li>
-                <li><a href="#">
-                  <img src="assets/images/notifications/error.png" alt="error">
-                  <span>You have been enrolled for Personal Conduct compliance training due on 30 October</span>
-                </a></li>
-                <li><a href="#">
-                  <img src="assets/images/notifications/alarm.png" alt="alarm">
-                  <span>Reminder to accept or decline your PBB townhall invitation</span>
-                </a></li>
-                <li><a href="#">
-                  <img src="assets/images/notifications/approaved.png" alt="approved">
-                  <span>Leave request approved</span>
-                </a></li>
-              </ul>
-            </div>
-            <a href="#" class="rAbs" >
-             <p class="text-right "> Manage notifications ></p>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card-box shadow">
-            <div class="feed__top-bar">
-              <div class="feed__social-img">
-                <div class="feed__social-img">
-                  <img src="assets/images/social-icons/quick.png" alt="quick">
-                </div>
-               </div>
-              <h5 class="feed__top-bar-title">My quick access</h5>
-            </div>
-            <div class="quickView__main-content">
-              <ul>
-                <li><a class="cm" href="#">
-                 View Features >
-                
-                </a></li>
-                <li><a class="cm" href="#">
-                  Human Capital home page >
-                </a></li>
-                <li><a class="cm" href="#">
-                  Complete training >
-                </a></li>
-                <li><a class="cm" href="#">
-                  View features >
-                </a></li>
-                <li><a class="cm" href="#">
-                  Access demo >
-                </a></li>
-                <li><a class="cm" href="#">
-                  Complete training >
-                </a></li>
-                <li><a class="cm" href="#">
-                  View features >
-                </a></li>
-                <li><a class="cm" href="#">
-                  Access demo >
-                </a></li>
-                <li><a class="cm" href="#">
-                Complete training >
-                </a></li>
-                <li><a class="cm" href="#">
-                Complete training >
-                </a></li>
-              </ul>
-            </div>
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center pt-3 ">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1"> < </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-               
-                <li class="page-item">
-                  <a class="page-link" href="#">></a>
-                </li>
-              </ul>
             </nav>
-            <a href="#"  class="rAbs">
-              <p class="text-right"> Manage links ></p>
-             </a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card-box shadow">
-            <div class="feed__top-bar">
-              <div class="feed__social-img">
-                <div class="feed__social-img">
-                  <img src="assets/images/social-icons/micro.png" alt="micro">
-                </div>
-               </div>
-              <h5 class="feed__top-bar-title">Office 365 apps</h5>
-            </div>
-            <div class="quickView__main-content">
-             <div class="row justify-content-center text-center">
-               <div class="col-4">
-               <a href="#">
-                <div class="quickView__img-wrapper">
-                  <img src="assets/images/offices/outlook.png" alt="outlook">
-               </div>
-                <span>Outlook</span>
-               </a>
-               </div>
-               <div class="col-4">
-               <a href="#">
-                <div class="quickView__img-wrapper">
-                  <img src="assets/images/offices/word.png" alt="word">
-               </div>
-               <span>Word</span>
-               </a>
-               </div>
-               <div class="col-4">
-                <a href="#">
-                  <div class="quickView__img-wrapper">
-                    <img src="assets/images/offices/excel.png" alt="excel">
-                 </div>
-                 <span>Excel</span>
-                </a>
-               </div>
-               <div class="col-4">
-                <a href="#">
-                  <div class="quickView__img-wrapper">
-                    <img src="assets/images/offices/oneDrive.png" alt="onedrive">
-                 </div>
-                  <span>OneDrive</span>
-                </a>
-               </div>
-               <div class="col-4">
-                <a href="#">
-                  <div class="quickView__img-wrapper">
-                    <img src="assets/images/offices/point.png" alt="pointe">
-                 </div>
-                 <span>PowerPoint</span>
-                </a>
-               </div>
-               <div class="col-4">
-                <a href="#">
-                  <div class="quickView__img-wrapper">
-                    <img src="assets/images/offices/sharePoint.png" alt="sharePoint">
-                 </div>
-                 <span>sharePoint</span>
-                </a>
-               </div>
-               <div class="col-4">
-                  <a href="#">
-                    <div class="quickView__img-wrapper">
-                      <img src="assets/images/offices/teams.png" alt="teams">
-                   </div>
-                    <span>Teams</span>
-                  </a>
-               </div>
-               <div class="col-4">
-                <a href="#">
-                  <div class="quickView__img-wrapper">
-                    <img src="assets/images/offices/Yammer.png" alt="yammer">
-                 </div>
-                 <span>Yammer</span>
-                </a>
-               </div>
-               <div class="col-4">
-                  <a href="#">
-                    <div class="quickView__img-wrapper">
-                      <img src="assets/images/offices/outlook.png" alt="outlook">
-                   </div>
-                   <span>Stream</span>
-                  </a>
-               </div>
-             </div>
-            </div>
-            <a href="#"  class="rAbs">
-              <p class="text-right pt-0"> All Apps ></p>
-             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Quick-View  section end -->
+        </header>
+        <!-- Header section end -->
 
-  <!-- Tabs  section start -->
-  <section class="tabs">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="group-tab" data-toggle="tab" href="#group" role="tab" aria-controls="group" aria-selected="true">Group news</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="PBB-tab" data-toggle="tab" href="#pbb" role="tab" aria-controls="pbb" aria-selected="false">PBB news</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="subscribe-tab" data-toggle="tab" href="#subscribe" role="tab" aria-controls="subscribe" aria-selected="false">Subscribe news</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="bookmark-tab" data-toggle="tab" href="#bookmark" role="tab" aria-controls="bookmark" aria-selected="false">Bookmarked articles</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="group" role="tabpanel" aria-labelledby="group-tab">
-            <div class="card-box tabs__container">
-              <div class="row">
-                <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
-                  <div class="tabs__img-wrapper">
-                    <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" >
-                  </div>
-                </div>
-                <div class="col-md-6 col-12 pl-0">
-                  <div class="tabs__content-wrapper">
-                    <div class="tabs__container-title">
-                      <h5>Digital</h5>
-                    </div>
-                    <div class="tabs__container-bTitle d-flex">
-                      <div class="tabs__container-img">
-                        <img src="assets/images/social-icons/text.png" alt="Text">
-                      </div>
-                      <h5 class="tabs__bTitle">
-                        How gender bias compromises the tech sector
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 pl-0">
-                  <p class="tabs__content-brief">
-                    According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only tech-related roles they are even more underrepresented.
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
+        <main style="position: relative;">
+            <ul class="sticky__sidebar">
+                <li class="sticky__item sticky__item-01">
+                    <a href="#" class="d-flex">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/icn_people-1.png" alt="img" />
+                        </div>
+                        <span>
+                            Employee <br />
+                            services
+                        </span>
+                    </a>
+                </li>
+                <li class="sticky__item sticky__item-02">
+                    <a href="#" class="d-flex">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/color.png" alt="img" />
+                        </div>
+                        <span>
+                            Employee <br />
+                            support
+                        </span>
+                    </a>
+                </li>
+                <li class="sticky__item sticky__item-03">
+                    <a href="#" class="d-flex">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/internet.png" alt="img" />
+                        </div>
+                        <span>
+                            Internet <br />
+                            banking
+                        </span>
+                    </a>
+                </li>
 
-                    <div class="tabs__container-bTitle d-flex">
-                      <div class="tabs__container-img">
-                        <img src="assets/images/social-icons/text.png" alt="Text">
-                      </div>
-                      <h5 class="tabs__bTitle">
-                        Standard Bank reports solid results for the period ending 30 June 2019
-                      </h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-
-                    <div class="tabs__container-bTitle d-flex">
-                      <div class="tabs__container-img">
-                        <img src="assets/images/social-icons/youtube-color.png" alt="Youtube">
-                      </div>
-                      <h5 class="tabs__bTitle">
-                        Business Online SA Mobile App launches
-                      </h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-                   
-                    <div class="tabs__container-bTitle d-flex">
-                      <div class="tabs__container-img">
-                        <img src="assets/images/social-icons/mic.png" alt="Text">
-                      </div>
-                      <h5 class="tabs__bTitle">
-                        Feenix is connecting students with businesses
-                      </h5>
-                    </div>
-                </div>
-                <div class="col-12 pt-85 pt-40">
-                  <a href="#" class="ml-0" style="font-size:12px; line-height: 16px; color: #0089FF"> View older Group news ></a>
-                </div>
-
-              </div>
-            </div>
-            </div>
-            <div class="tab-pane fade" id="pbb" role="tabpanel" aria-labelledby="PBB-tab">
-              <div class="card-box tabs__container">
-                <div class="row">
-                  <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
-                    <div class="tabs__img-wrapper">
-                      <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" >
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-12 pl-0">
-                    <div class="tabs__content-wrapper">
-                      <div class="tabs__container-title">
-                        <h5>Digital</h5>
-                      </div>
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/text.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          How gender bias compromises the tech sector
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 pl-0">
-                    <p class="tabs__content-brief">
-                      According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only tech-related roles they are even more underrepresented.
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-  
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/text.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Standard Bank reports solid results for the period ending 30 June 2019
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-  
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/youtube-color.png" alt="Youtube">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Business Online SA Mobile App launches
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-                     
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/mic.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Feenix is connecting students with businesses
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-12 pt-85 pt-40">
-                    <a href="#" class="ml-0" style="font-size:12px; line-height: 16px; color: #0089FF"> View older Group news ></a>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="subscribe" role="tabpanel" aria-labelledby="subscribe-tab">
-              <div class="card-box tabs__container">
-                <div class="row">
-                  <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
-                    <div class="tabs__img-wrapper">
-                      <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" >
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-12 pl-0">
-                    <div class="tabs__content-wrapper">
-                      <div class="tabs__container-title">
-                        <h5>Digital</h5>
-                      </div>
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/text.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          How gender bias compromises the tech sector
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 pl-0">
-                    <p class="tabs__content-brief">
-                      According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only tech-related roles they are even more underrepresented.
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-  
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/text.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Standard Bank reports solid results for the period ending 30 June 2019
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-  
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/youtube-color.png" alt="Youtube">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Business Online SA Mobile App launches
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-                     
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/mic.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Feenix is connecting students with businesses
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-12 pt-85 pt-40">
-                    <a href="#" class="ml-0" style="font-size:12px; line-height: 16px; color: #0089FF"> View older Group news ></a>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="bookmark" role="tabpanel" aria-labelledby="bookmark-tab">
-              <div class="card-box tabs__container">
-                <div class="row">
-                  <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
-                    <div class="tabs__img-wrapper">
-                      <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" >
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-12 pl-0">
-                    <div class="tabs__content-wrapper">
-                      <div class="tabs__container-title">
-                        <h5>Digital</h5>
-                      </div>
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/text.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          How gender bias compromises the tech sector
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 pl-0">
-                    <p class="tabs__content-brief">
-                      According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only tech-related roles they are even more underrepresented.
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-  
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/text.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Standard Bank reports solid results for the period ending 30 June 2019
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-  
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/youtube-color.png" alt="Youtube">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Business Online SA Mobile App launches
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-md-4 col-12 pl-0  mb-4 mb-md-0">
-                     
-                      <div class="tabs__container-bTitle d-flex">
-                        <div class="tabs__container-img">
-                          <img src="assets/images/social-icons/mic.png" alt="Text">
-                        </div>
-                        <h5 class="tabs__bTitle">
-                          Feenix is connecting students with businesses
-                        </h5>
-                      </div>
-                  </div>
-                  <div class="col-12 pt-85 pt-40">
-                    <a href="#" class="ml-0" style="font-size:12px; line-height: 16px; color: #0089FF"> View older Group news ></a>
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-5 pt-3">
-        <div class="card-box shadow p-0 pb-2">
-        <div class="tabs__slider">
-          <div class="tabs__slider-content">
-            <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100">
-          </div>
-          <div class="tabs__slider-content">
-            <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100">
-          </div>
-          <div class="tabs__slider-content">
-            <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100">
-          </div>
-         
-        </div>
-        </div>
-        <div class="card-box shadow mt-4">
-          <div class="tabs__featured">
-            <div class="tabs__titled d-flex align-items-center">
-              <div class="tabs__titleImg">
-                <img src="assets/images/social-icons/search.png" alt="Search">
-              </div>
-              <h5 class="mb-0">Featured SBHub content</h5>
-            </div>
-            <p class="tabs__brief">
-              Operations are committed to developing staff iin preparation for the future world of work, aligned to the Group strategy. This will be done through various internationally recognised certifications accessible by all staff from their Intranet site. A comprehensive catalogue of programmes can be access below.
-            </p>
-
-            <ul class="breedcrumb d-flex">
-              <li><a href="#">Business lines ></a></li>
-              <li><a href="#">Operations ></a></li>
-              <li><a href="#">Our programmes ></a></li>
+                <li class="toggle">
+                    <i class="fas fa-cog"></i>
+                </li>
             </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Tabs  section end -->
 
-
-  <!-- news-feed section start -->
-  <section class="feed">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="feed__message card-box shadow">
-            <div class="feed__top-bar ">
-             <div class="feed__social-img">
-              <img src="assets/images/social-icons/tele-sm.png" alt="tele" class="d-inline">
-             </div>
-              <h5 class="feed__top-bar-title text-center">Group Feed</h5>
-            </div>
-          <div class="feed__slider">
-            <div class="feed__message-content-bar">
-              <div class="feed__message-bar">
-                <form class="feed__input-wrapper">
-                  <input type="text" placeholder="Share a thought or ask a question">
-                  <span>
-                    <button style="background-color: transparent;" type="submit">
-                      <img src="assets/images/social-icons/Send.png" alt="send">
-                    </button>
-                  </span>
-                </form>
-                <div class="feed__chat-list">
-                  <div class="feed__chat-list-top d-flex">
-                    <div class="feed__chat-list_image">
-                      <img src="assets/images/people/people-01.png" alt="people-01">
+            <!-- notes  section start -->
+            <section class="notes py-4">
+                <div class="container">
+                    <div class="row">
+                        <h5 class="notes__title">
+                            Dates to note
+                        </h5>
                     </div>
-                    <div class="feed__chat-list_names">
-                      <h5>Daniel Johns</h5>
-                      <span class="dates">November 19</span>
+                    <div class="notes__items d-flex justify-content-start text-nowrap overflow-auto overflow-auto">
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/orange.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Client conduct training due</h5>
+                                <div class="link__wrapper">
+                                    <a href="#" class="rAbs">
+                                        <span>Manage Leave ></span>
+                                    </a>
+                                    <a href="#" class="rAbs">
+                                        <span>see Details ></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Freedom day</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/lOrange.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <div class="link__wrapper">
+                                    <a href="#" class="rAbs">
+                                        <span>View features ></span>
+                                    </a>
+                                    <a href="#" class="rAbs">
+                                        <span>Acess demo ></span>
+                                    </a>
+                                    <a href="#" class="rAbs">
+                                        <span>Complete Training></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="feed__message-content">
-                    <p>is it just me or is there a concerted effort to improve our digital offering ? </p>
-                  </div>
                 </div>
+            </section>
+            <!-- notes  section end -->
 
-                <div class="feed__chat-list">
-                  <div class="feed__chat-list-top d-flex">
-                    <div class="feed__chat-list_image">
-                      <img src="assets/images/people/people-02.png" alt="people-02">
+            <!-- Quick-View  section start -->
+            <section class="quickView feed">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <div class="feed__social-img">
+                                            <img src="assets/images/social-icons/noti.png" alt="noti" />
+                                        </div>
+                                    </div>
+                                    <h5 class="feed__top-bar-title">My notifications</h5>
+                                </div>
+                                <div class="quickView__main-content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/alert.png" alt="alerts" />
+                                                <span>Your AML training will expire in 3 days</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/error.png" alt="error" />
+                                                <span>Untapped opportunities in the Soft Drinks market in Africa</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/error.png" alt="error" />
+                                                <span>You have been enrolled for Personal Conduct compliance training due on 30 October</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/alarm.png" alt="alarm" />
+                                                <span>Reminder to accept or decline your PBB townhall invitation</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/approaved.png" alt="approved" />
+                                                <span>Leave request approved</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="rAbs">
+                                    <p class="text-right">Manage notifications ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <div class="feed__social-img">
+                                            <img src="assets/images/social-icons/quick.png" alt="quick" />
+                                        </div>
+                                    </div>
+                                    <h5 class="feed__top-bar-title">My quick access</h5>
+                                </div>
+                                <div class="quickView__main-content">
+                                    <ul>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                View Features >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                Human Capital home page >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                Complete training >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                View features >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                Access demo >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                Complete training >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                View features >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                Access demo >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                Complete training >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="cm" href="#">
+                                                Complete training >
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center pt-3">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1"> < </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="#" class="rAbs">
+                                    <p class="text-right">Manage links ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <div class="feed__social-img">
+                                            <img src="assets/images/social-icons/micro.png" alt="micro" />
+                                        </div>
+                                    </div>
+                                    <h5 class="feed__top-bar-title">Office 365 apps</h5>
+                                </div>
+                                <div class="quickView__main-content">
+                                    <div class="row justify-content-center text-center">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/outlook.png" alt="outlook" />
+                                                </div>
+                                                <span>Outlook</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/word.png" alt="word" />
+                                                </div>
+                                                <span>Word</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/excel.png" alt="excel" />
+                                                </div>
+                                                <span>Excel</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/oneDrive.png" alt="onedrive" />
+                                                </div>
+                                                <span>OneDrive</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/point.png" alt="pointe" />
+                                                </div>
+                                                <span>PowerPoint</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/sharePoint.png" alt="sharePoint" />
+                                                </div>
+                                                <span>sharePoint</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/teams.png" alt="teams" />
+                                                </div>
+                                                <span>Teams</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/Yammer.png" alt="yammer" />
+                                                </div>
+                                                <span>Yammer</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <div class="quickView__img-wrapper">
+                                                    <img src="assets/images/offices/outlook.png" alt="outlook" />
+                                                </div>
+                                                <span>Stream</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="rAbs">
+                                    <p class="text-right pt-0">All Apps ></p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feed__chat-list_names">
-                      <h5>Janel Saunders</h5>
-                      <span class="dates">November 19</span>
-                    </div>
-                  </div>
-                  <div class="feed__message-content">
-                    <p>You have it spot on, John. Loads being invested to innovate and implement </p>
-                  </div>
                 </div>
-               </div>
-             
-            </div>
-            <div class="feed__message-content-bar">
-              <div class="feed__message-bar">
-                <form class="feed__input-wrapper">
-                  <input type="text" placeholder="Share a thought or ask a question">
-                  <span>
-                    <button style="background-color: transparent;" type="submit">
-                      <img src="assets/images/social-icons/Send.png" alt="send">
-                    </button>
-                  </span>
-                </form>
-                <div class="feed__chat-list">
-                  <div class="feed__chat-list-top d-flex">
-                    <div class="feed__chat-list_image">
-                      <img src="assets/images/people/people-01.png" alt="people-01">
+            </section>
+            <!-- Quick-View  section end -->
+
+            <!-- Tabs  section start -->
+            <section class="tabs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="group-tab" data-toggle="tab" href="#group" role="tab" aria-controls="group" aria-selected="true">Group news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="PBB-tab" data-toggle="tab" href="#pbb" role="tab" aria-controls="pbb" aria-selected="false">PBB news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="subscribe-tab" data-toggle="tab" href="#subscribe" role="tab" aria-controls="subscribe" aria-selected="false">Subscribe news</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="bookmark-tab" data-toggle="tab" href="#bookmark" role="tab" aria-controls="bookmark" aria-selected="false">Bookmarked articles</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="group" role="tabpanel" aria-labelledby="group-tab">
+                                    <div class="card-box tabs__container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
+                                                <div class="tabs__img-wrapper">
+                                                    <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12 pl-0">
+                                                <div class="tabs__content-wrapper">
+                                                    <div class="tabs__container-title">
+                                                        <h5>Digital</h5>
+                                                    </div>
+                                                    <div class="tabs__container-bTitle d-flex">
+                                                        <div class="tabs__container-img">
+                                                            <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                        </div>
+                                                        <h5 class="tabs__bTitle">
+                                                            How gender bias compromises the tech sector
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pl-0">
+                                                <p class="tabs__content-brief">
+                                                    According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only
+                                                    tech-related roles they are even more underrepresented.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Standard Bank reports solid results for the period ending 30 June 2019
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/youtube-color.png" alt="Youtube" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Business Online SA Mobile App launches
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/mic.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Feenix is connecting students with businesses
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-85 pt-40">
+                                                <a href="#" class="ml-0" style="font-size: 12px; line-height: 16px; color: #0089ff;"> View older Group news ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pbb" role="tabpanel" aria-labelledby="PBB-tab">
+                                    <div class="card-box tabs__container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
+                                                <div class="tabs__img-wrapper">
+                                                    <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12 pl-0">
+                                                <div class="tabs__content-wrapper">
+                                                    <div class="tabs__container-title">
+                                                        <h5>Digital</h5>
+                                                    </div>
+                                                    <div class="tabs__container-bTitle d-flex">
+                                                        <div class="tabs__container-img">
+                                                            <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                        </div>
+                                                        <h5 class="tabs__bTitle">
+                                                            How gender bias compromises the tech sector
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pl-0">
+                                                <p class="tabs__content-brief">
+                                                    According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only
+                                                    tech-related roles they are even more underrepresented.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Standard Bank reports solid results for the period ending 30 June 2019
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/youtube-color.png" alt="Youtube" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Business Online SA Mobile App launches
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/mic.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Feenix is connecting students with businesses
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-85 pt-40">
+                                                <a href="#" class="ml-0" style="font-size: 12px; line-height: 16px; color: #0089ff;"> View older Group news ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="subscribe" role="tabpanel" aria-labelledby="subscribe-tab">
+                                    <div class="card-box tabs__container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
+                                                <div class="tabs__img-wrapper">
+                                                    <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12 pl-0">
+                                                <div class="tabs__content-wrapper">
+                                                    <div class="tabs__container-title">
+                                                        <h5>Digital</h5>
+                                                    </div>
+                                                    <div class="tabs__container-bTitle d-flex">
+                                                        <div class="tabs__container-img">
+                                                            <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                        </div>
+                                                        <h5 class="tabs__bTitle">
+                                                            How gender bias compromises the tech sector
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pl-0">
+                                                <p class="tabs__content-brief">
+                                                    According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only
+                                                    tech-related roles they are even more underrepresented.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Standard Bank reports solid results for the period ending 30 June 2019
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/youtube-color.png" alt="Youtube" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Business Online SA Mobile App launches
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/mic.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Feenix is connecting students with businesses
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-85 pt-40">
+                                                <a href="#" class="ml-0" style="font-size: 12px; line-height: 16px; color: #0089ff;"> View older Group news ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="bookmark" role="tabpanel" aria-labelledby="bookmark-tab">
+                                    <div class="card-box tabs__container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-12 px-0 pl-md-0 pr-md-3">
+                                                <div class="tabs__img-wrapper">
+                                                    <img src="assets/images/bg/bg-sm-3.png" alt="bg-03" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12 pl-0">
+                                                <div class="tabs__content-wrapper">
+                                                    <div class="tabs__container-title">
+                                                        <h5>Digital</h5>
+                                                    </div>
+                                                    <div class="tabs__container-bTitle d-flex">
+                                                        <div class="tabs__container-img">
+                                                            <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                        </div>
+                                                        <h5 class="tabs__bTitle">
+                                                            How gender bias compromises the tech sector
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pl-0">
+                                                <p class="tabs__content-brief">
+                                                    According to the World Economic Forum's latest Global Gender Gap report, women make up less than 40% of the total workforce in the top tech companies, and when considering only
+                                                    tech-related roles they are even more underrepresented.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/text.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Standard Bank reports solid results for the period ending 30 June 2019
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/youtube-color.png" alt="Youtube" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Business Online SA Mobile App launches
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 pl-0 mb-4 mb-md-0">
+                                                <div class="tabs__container-bTitle d-flex">
+                                                    <div class="tabs__container-img">
+                                                        <img src="assets/images/social-icons/mic.png" alt="Text" />
+                                                    </div>
+                                                    <h5 class="tabs__bTitle">
+                                                        Feenix is connecting students with businesses
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-85 pt-40">
+                                                <a href="#" class="ml-0" style="font-size: 12px; line-height: 16px; color: #0089ff;"> View older Group news ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-5 pt-3">
+                            <div class="card-box shadow p-0 pb-2">
+                                <div class="tabs__slider">
+                                    <div class="tabs__slider-content">
+                                        <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100" />
+                                    </div>
+                                    <div class="tabs__slider-content">
+                                        <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100" />
+                                    </div>
+                                    <div class="tabs__slider-content">
+                                        <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box shadow mt-4">
+                                <div class="tabs__featured">
+                                    <div class="tabs__titled d-flex align-items-center">
+                                        <div class="tabs__titleImg">
+                                            <img src="assets/images/social-icons/search.png" alt="Search" />
+                                        </div>
+                                        <h5 class="mb-0">Featured SBHub content</h5>
+                                    </div>
+                                    <p class="tabs__brief">
+                                        Operations are committed to developing staff iin preparation for the future world of work, aligned to the Group strategy. This will be done through various internationally recognised certifications
+                                        accessible by all staff from their Intranet site. A comprehensive catalogue of programmes can be access below.
+                                    </p>
+
+                                    <ul class="breedcrumb d-flex">
+                                        <li><a href="#">Business lines ></a></li>
+                                        <li><a href="#">Operations ></a></li>
+                                        <li><a href="#">Our programmes ></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feed__chat-list_names">
-                      <h5>Daniel Johns</h5>
-                      <span class="dates">November 19</span>
-                    </div>
-                  </div>
-                  <div class="feed__message-content">
-                    <p>is it just me or is there a concerted effort to improve our digital offering ? </p>
-                  </div>
                 </div>
+            </section>
+            <!-- Tabs  section end -->
 
-                <div class="feed__chat-list">
-                  <div class="feed__chat-list-top d-flex">
-                    <div class="feed__chat-list_image">
-                      <img src="assets/images/people/people-02.png" alt="people-02">
+            <!-- news-feed section start -->
+            <section class="feed">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="feed__message card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <img src="assets/images/social-icons/tele-sm.png" alt="tele" class="d-inline" />
+                                    </div>
+                                    <h5 class="feed__top-bar-title text-center">Group Feed</h5>
+                                </div>
+                                <div class="feed__slider">
+                                    <div class="feed__message-content-bar">
+                                        <div class="feed__message-bar">
+                                            <form class="feed__input-wrapper">
+                                                <input type="text" placeholder="Share a thought or ask a question" />
+                                                <span>
+                                                    <button style="background-color: transparent;" type="submit">
+                                                        <img src="assets/images/social-icons/Send.png" alt="send" />
+                                                    </button>
+                                                </span>
+                                            </form>
+                                            <div class="feed__chat-list">
+                                                <div class="feed__chat-list-top d-flex">
+                                                    <div class="feed__chat-list_image">
+                                                        <img src="assets/images/people/people-01.png" alt="people-01" />
+                                                    </div>
+                                                    <div class="feed__chat-list_names">
+                                                        <h5>Daniel Johns</h5>
+                                                        <span class="dates">November 19</span>
+                                                    </div>
+                                                </div>
+                                                <div class="feed__message-content">
+                                                    <p>is it just me or is there a concerted effort to improve our digital offering ?</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="feed__chat-list">
+                                                <div class="feed__chat-list-top d-flex">
+                                                    <div class="feed__chat-list_image">
+                                                        <img src="assets/images/people/people-02.png" alt="people-02" />
+                                                    </div>
+                                                    <div class="feed__chat-list_names">
+                                                        <h5>Janel Saunders</h5>
+                                                        <span class="dates">November 19</span>
+                                                    </div>
+                                                </div>
+                                                <div class="feed__message-content">
+                                                    <p>You have it spot on, John. Loads being invested to innovate and implement</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feed__message-content-bar">
+                                        <div class="feed__message-bar">
+                                            <form class="feed__input-wrapper">
+                                                <input type="text" placeholder="Share a thought or ask a question" />
+                                                <span>
+                                                    <button style="background-color: transparent;" type="submit">
+                                                        <img src="assets/images/social-icons/Send.png" alt="send" />
+                                                    </button>
+                                                </span>
+                                            </form>
+                                            <div class="feed__chat-list">
+                                                <div class="feed__chat-list-top d-flex">
+                                                    <div class="feed__chat-list_image">
+                                                        <img src="assets/images/people/people-01.png" alt="people-01" />
+                                                    </div>
+                                                    <div class="feed__chat-list_names">
+                                                        <h5>Daniel Johns</h5>
+                                                        <span class="dates">November 19</span>
+                                                    </div>
+                                                </div>
+                                                <div class="feed__message-content">
+                                                    <p>is it just me or is there a concerted effort to improve our digital offering ?</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="feed__chat-list">
+                                                <div class="feed__chat-list-top d-flex">
+                                                    <div class="feed__chat-list_image">
+                                                        <img src="assets/images/people/people-02.png" alt="people-02" />
+                                                    </div>
+                                                    <div class="feed__chat-list_names">
+                                                        <h5>Janel Saunders</h5>
+                                                        <span class="dates">November 19</span>
+                                                    </div>
+                                                </div>
+                                                <div class="feed__message-content">
+                                                    <p>You have it spot on, John. Loads being invested to innovate and implement</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feed__message-content-bar">
+                                        <div class="feed__message-bar">
+                                            <form class="feed__input-wrapper">
+                                                <input type="text" placeholder="Share a thought or ask a question" />
+                                                <span>
+                                                    <button style="background-color: transparent;" type="submit">
+                                                        <img src="assets/images/social-icons/Send.png" alt="send" />
+                                                    </button>
+                                                </span>
+                                            </form>
+                                            <div class="feed__chat-list">
+                                                <div class="feed__chat-list-top d-flex">
+                                                    <div class="feed__chat-list_image">
+                                                        <img src="assets/images/people/people-01.png" alt="people-01" />
+                                                    </div>
+                                                    <div class="feed__chat-list_names">
+                                                        <h5>Daniel Johns</h5>
+                                                        <span class="dates">November 19</span>
+                                                    </div>
+                                                </div>
+                                                <div class="feed__message-content">
+                                                    <p>is it just me or is there a concerted effort to improve our digital offering ?</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="feed__chat-list">
+                                                <div class="feed__chat-list-top d-flex">
+                                                    <div class="feed__chat-list_image">
+                                                        <img src="assets/images/people/people-02.png" alt="people-02" />
+                                                    </div>
+                                                    <div class="feed__chat-list_names">
+                                                        <h5>Janel Saunders</h5>
+                                                        <span class="dates">November 19</span>
+                                                    </div>
+                                                </div>
+                                                <div class="feed__message-content">
+                                                    <p>You have it spot on, John. Loads being invested to innovate and implement</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="feed__reply">
+                                    <a href="#">
+                                        <label for="reply"> View the Full conversation ></label>
+                                    </a>
+                                    <input type="text" placeholder="Write a reply" />
+                                    <span>
+                                        <button style="background-color: transparent;" type="submit"><img src="assets/images/social-icons/reply.png" alt="reply" /></button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feed__social card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <div class="feed__social-img">
+                                            <img src="assets/images/social-icons/insta-sm.png" alt="tele" />
+                                        </div>
+                                    </div>
+                                    <h5 class="feed__top-bar-title">Standard Bank Group</h5>
+                                </div>
+                                <div class="feed__img-content">
+                                    <img src="assets/images/bg/bg-01.png" alt="bg-01" class="img-fluid" />
+                                </div>
+                                <div class="feed__likes">
+                                    <span>33 likes </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feed__social card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <img src="assets/images/social-icons/linked-sm.png" alt="insta" />
+                                    </div>
+                                    <h5 class="feed__top-bar-title">Standard Bank Group</h5>
+                                </div>
+                                <div class="feed__img-content">
+                                    <img src="assets/images/bg/bg-02.png" alt="bg-02" class="img-fluid" />
+                                </div>
+                                <div class="feed__brief">
+                                    <p>
+                                        The SME sector in Ghana contributes over 70% of the country’s GDP,” says Stanbic Bank Ghana Chief Executive Alhassan Andani. “We had to take measures to protect the SME sector which is the backbone of
+                                        the Ghanaian economy.” Read how here: <a href="#">https://bit.ly/3l7Fmf6</a>
+                                    </p>
+                                </div>
+                                <div class="feed__likes">
+                                    <span>25 likes </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feed__chat-list_names">
-                      <h5>Janel Saunders</h5>
-                      <span class="dates">November 19</span>
-                    </div>
-                  </div>
-                  <div class="feed__message-content">
-                    <p>You have it spot on, John. Loads being invested to innovate and implement </p>
-                  </div>
                 </div>
-               </div>
-             
-            </div>
-            <div class="feed__message-content-bar">
-              <div class="feed__message-bar">
-                <form class="feed__input-wrapper">
-                  <input type="text" placeholder="Share a thought or ask a question">
-                  <span>
-                    <button style="background-color: transparent;" type="submit">
-                      <img src="assets/images/social-icons/Send.png" alt="send">
-                    </button>
-                  </span>
-                </form>
-                <div class="feed__chat-list">
-                  <div class="feed__chat-list-top d-flex">
-                    <div class="feed__chat-list_image">
-                      <img src="assets/images/people/people-01.png" alt="people-01">
+            </section>
+            <!-- news-feed section end -->
+        </main>
+
+        <!-- footer section start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="footer__col">
+                            <h5 class="footer__title">
+                                Resources
+                            </h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">GDU</a></li>
+                                <li><a href="#">SB App store</a></li>
+                                <li><a href="#">The Knowledge Center</a></li>
+                                <li><a href="#">0365 Learning Portal</a></li>
+                                <li><a href="#">Stationery</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="feed__chat-list_names">
-                      <h5>Daniel Johns</h5>
-                      <span class="dates">November 19</span>
+                    <div class="col-md-3 col-6 ml-40">
+                        <div class="footer__col">
+                            <h5 class="footer__title">
+                                The Group
+                            </h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Strategy</a></li>
+                                <li><a href="#">Footprint</a></li>
+                                <li><a href="#">Values and ethics</a></li>
+                                <li><a href="#">Board of directors</a></li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
-                  <div class="feed__message-content">
-                    <p>is it just me or is there a concerted effort to improve our digital offering ? </p>
-                  </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="footer__col">
+                            <h5 class="footer__title">
+                                Commonly used links
+                            </h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">Self Service</a></li>
+                                <li><a href="#">IT Service Desk</a></li>
+                                <li><a href="#">Fraudstop</a></li>
+                                <li><a href="#">Whistleblowing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="footer__col">
+                            <h5 class="footer__title">
+                                Contact SB Hub
+                            </h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">Email: SBUB@standardbank.com</a></li>
+                                <form class="footer__input-wrapper">
+                                    <label for="s_field">Yammer #SBHub</label>
+                                    <input type="text" id="s_field" class="footer__col-input" placeholder="Search" />
+                                    <button class="footer__search"><i class="fas fa-search" style="color: #fff;"></i></button>
+                                </form>
+                                <ul class="footer__social-icon">
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/facebook-sm.png" alt="facebook" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/linked.png" alt="linkedIn" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/youtube-sm.png" alt="youtube" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/twitter-sm.png" alt="twitter" /></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
 
-                <div class="feed__chat-list">
-                  <div class="feed__chat-list-top d-flex">
-                    <div class="feed__chat-list_image">
-                      <img src="assets/images/people/people-02.png" alt="people-02">
-                    </div>
-                    <div class="feed__chat-list_names">
-                      <h5>Janel Saunders</h5>
-                      <span class="dates">November 19</span>
-                    </div>
-                  </div>
-                  <div class="feed__message-content">
-                    <p>You have it spot on, John. Loads being invested to innovate and implement </p>
-                  </div>
-                </div>
-               </div>
-             
-            </div>
-            
-          </div>
-            <form class="feed__reply">
-              <a href="#">
-                <label for="reply"> View the Full conversation ></label>
-              </a>
-              <input type="text" placeholder="Write a reply">
-              <span>
-                <button style="background-color: transparent;" type="submit"><img src="assets/images/social-icons/reply.png" alt="reply"></button>
-              </span>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="feed__social card-box shadow">
-            <div class="feed__top-bar">
-              <div class="feed__social-img">
-                <div class="feed__social-img">
-                  <img src="assets/images/social-icons/insta-sm.png" alt="tele">
-                </div>
-               </div>
-              <h5 class="feed__top-bar-title">Standard Bank Group</h5>
-            </div>
-            <div class="feed__img-content">
-              <img src="assets/images/bg/bg-01.png" alt="bg-01" class="img-fluid">
-            </div>
-            <div class="feed__likes">
-              <span>33 likes </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="feed__social card-box shadow">
-            <div class="feed__top-bar">
-              <div class="feed__social-img">
-                <img src="assets/images/social-icons/linked-sm.png" alt="insta">
-              </div>
-              <h5 class="feed__top-bar-title">Standard Bank Group</h5>
-            </div>
-            <div class="feed__img-content">
-              <img src="assets/images/bg/bg-02.png" alt="bg-02" class="img-fluid">
-            </div>
-            <div class="feed__brief">
-              <p>
-                The SME sector in Ghana contributes over 70% of the country’s GDP,” says Stanbic Bank Ghana Chief Executive Alhassan Andani. “We had to take measures to protect the SME sector which is the backbone of the Ghanaian economy.” Read how here: <a href="#">https://bit.ly/3l7Fmf6</a>
-              </p>
-            </div>
-            <div class="feed__likes">
-              <span>25 likes </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- news-feed section end -->
-
-</main>
-
-  <!-- footer section start -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-6 ">
-          <div class="footer__col">
-            <h5 class="footer__title">
-              Resources
-            </h5>
-            <ul class="footer__col-item">
-              <li><a href="#">GDU</a></li>
-              <li><a href="#">SB App store</a></li>
-              <li><a href="#">The Knowledge Center</a></li>
-              <li><a href="#">0365 Learning Portal</a></li>
-              <li><a href="#">Stationery</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 ml-40">
-          <div class="footer__col">
-            <h5 class="footer__title">
-              The Group
-            </h5>
-            <ul class="footer__col-item">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Strategy</a></li>
-              <li><a href="#">Footprint</a></li>
-              <li><a href="#">Values and ethics</a></li>
-              <li><a href="#">Board of directors</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-12 ">
-          <div class="footer__col">
-            <h5 class="footer__title">
-              Commonly used links
-            </h5>
-            <ul class="footer__col-item">
-              <li><a href="#">Self Service</a></li>
-              <li><a href="#">IT Service Desk</a></li>
-              <li><a href="#">Fraudstop</a></li>
-              <li><a href="#">Whistleblowing</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-12 ">
-          <div class="footer__col">
-            <h5 class="footer__title">
-              Contact SB Hub
-            </h5>
-            <ul class="footer__col-item">
-              <li><a href="#">Email: SBUB@standardbank.com</a></li>
-              <form class="footer__input-wrapper">
-                <label for="s_field">Yammer #SBHub</label>
-                <input type="text" id="s_field" class="footer__col-input" placeholder="Search">
-                <button class="footer__search"><i class="fas fa-search" style="color: #fff"></i></button>
-              </form>
-              <ul class="footer__social-icon ">
-                <li><a href="#"><img src="assets/images/social-icons/facebook-sm.png" alt="facebook"></a></li>
-                <li><a href="#"><img src="assets/images/social-icons/linked.png" alt="linkedIn"></a></li>
-                <li><a href="#"><img src="assets/images/social-icons/youtube-sm.png" alt="youtube"></a></li>
-                <li><a href="#"><img src="assets/images/social-icons/twitter-sm.png" alt="twitter"></a></li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer section end -->
-
-  <!-- All js Goes here -->
-  <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/app.js"></script>
-</body>
-
+        <!-- All js Goes here -->
+        <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
